@@ -1,0 +1,60 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* PÁGINA PRINCIPAL (index.html)*/
+
+    ul.navlist {
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1.5rem  0 0.5rem 0;
+
+    }
+
+    .main_picture {
+        border-radius: 7.5%;
+        width: 90vw;
+        height: 45vh;
+    }
+
+    .intro_p {
+        padding: 0 5%;
+    }
+
+    /* GALERÍA */
+
+    .picture {
+        border-radius: 7.5%;
+        width: 44vw;
+        height: 44vh;
+        margin: auto;
+    }
+
+    div p.faculty-glyphic-regular {
+        padding: 0 1rem !important;
+    }
+
+    ul.services_list {
+        display: block;
+        font-weight: bold;
+        line-height: 1rem;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    /* CONTACTO */
+
+    div.selector_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.1rem;
+        justify-content: center;
+        padding: 0 40%;
+        gap: 1.5em;
+    }
+
+    .text_selector {
+        padding: 0 30% !important;
+    }
+
+
+}
