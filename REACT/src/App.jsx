@@ -1,7 +1,5 @@
 import { useState } from 'react'
 
-import {General} from '../../CSS'
-import { Nav } from './COMPONENTS/JSX/Nav'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,11 +7,9 @@ function App() {
 
   return (
     <>
-     <header>
 
-      <Nav></Nav>
+    <Card/>
 
-     </header>
     </>
   )
 }
