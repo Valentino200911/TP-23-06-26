@@ -2,6 +2,11 @@ import {createBrowserRouter} from 'react-router-dom'
 import App from './App'
 import Home from './components/pages/Home'
 import Error from './components/pages/Error'
+import Cabañas from './components/pages/Cabañas'
+import ServiciosTuristicos from './components/pages/ServiciosTuristicos'
+import Naturaleza from './components/pages/Naturaleza'
+import Indice from './components/pages/Indice'
+import Contacto from './components/pages/Contacto'
 
 export const router = createBrowserRouter([
 
@@ -19,14 +24,41 @@ export const router = createBrowserRouter([
 
             },
 
-            {},
+            {
+                path: "/cabañas",
 
-            {},
+                element: <Cabañas />                
 
-            {},
+            },
 
-            {},
+            {
+                path: "/serviciosturisticos",
 
+                element: <ServiciosTuristicos />                
+
+            },
+
+            {
+                path: "/contacto",
+
+                element: <Contacto />                
+
+            },
+
+
+            {
+                path: "/naturaleza",
+
+                element: <Naturaleza />                
+
+            },
+
+            {
+                path: "/indice",
+
+                element: <Indice />                
+
+            },
 
             {
                 //errorRoute, por comodidad el html está escrito en Error.jsx

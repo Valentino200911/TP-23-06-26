@@ -1,9 +1,8 @@
 import React from 'react'
-import General from '../../../../CSS'
 
-function Card(cardTitle, src, alt, cardText, href, buttonText) {
+function Card(cardTitle, src, alt, cardText, href) {
   return (
-    <div>
+    <>
 
         <div className='card'>
 
@@ -15,13 +14,13 @@ function Card(cardTitle, src, alt, cardText, href, buttonText) {
 
           <a href={href} target='blank' title={cardTitle}>
 
-          <button id='info'>{buttonText}</button>
+          <button id='info'>Más Información</button>
 
           </a>
 
         </div>
 
-    </div>
+    </>
   )
 }
 

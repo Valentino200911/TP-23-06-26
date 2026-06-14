@@ -40,6 +40,10 @@ ul.services_list {
 }
 
 div p.faculty-glyphic-regular {
+    padding: 0 9%;
+}
+
+ul.services-list li.faculty-glyphic-regular {
     padding: 0 14%;
 }
 

@@ -6,40 +6,75 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import RouteNavList from './RouteNavList'
+import Logo from './Logo'
 
 function Nav() {
+
   return (
-    <nav>
+    <nav className='navbar navlist'>
 
-      <RouteNavList
+      {/* El NavLink está para verificar el funcionamiento del ruteo general debido a que RouteNavList no permite escribir el NavText (ver RouteNavList.jsx) */}
+
+      {/* Esto debe borrarse */}
+
+      <NavLink to="/">Home</NavLink>
+
+      <br />
+
+      <NavLink to="/cabañas">Cabañas</NavLink>
+
+      <br />
+
+      <NavLink to="/serviciosturisticos">Servicios Turísticos y Ubicación</NavLink>
+
+      <br />
+
+      <NavLink to="/contacto">Contacto</NavLink>
+
+      <br />
+
+      <NavLink to="/naturaleza">Naturaleza</NavLink>
+
+      <br />
+
+      <NavLink to="/indice">Indice</NavLink>
+
+      <ul className='navlist'>
+
+      <Logo
       src=""
-      alt=""
-      route=""
-      />
+      alt="" />
 
       <RouteNavList
-      i=""
+      i="faHouse"
       navText="Home"
       route="/"/>
 
       <RouteNavList
       i=""
-      navText=""
-      route=""/>
+      navText="Cabañas"
+      route="/cabañas"/>
 
 
       <RouteNavList
       i=""
-      navText=""
+      navText="Servicios Turísticos y Ubicación"
       route=""/>
 
       <RouteNavList
       i=""
-      navText=""
+      navText="Contacto"
       route=""/>
 
+      <RouteNavList
+      i=""
+      navText="Naturaleza"
+      route=""/>
+
+      </ul>
 
     </nav>
+
   )
 }
 

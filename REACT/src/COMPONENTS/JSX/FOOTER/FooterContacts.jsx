@@ -4,8 +4,9 @@ import MediaList from './MediaList'
 
 function FooterContacts() {
   return (
-    <div>
-        <ul>
+    <>
+
+        <ul className='navlist'>
 
             <MediaList 
                 href='https://www.booking.com'
@@ -38,7 +39,7 @@ function FooterContacts() {
 
         </ul>
 
-    </div>
+    </>
   )
 }
 

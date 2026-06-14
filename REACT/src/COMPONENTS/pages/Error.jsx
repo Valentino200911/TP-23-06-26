@@ -1,18 +1,16 @@
 
 function Error() {
   return (
-    <div>
+    <>
 
-        <h1>ERROR 404</h1>
+        <h1 className="warning">ERROR 404</h1>
 
-        <p>Usted ha ingresado a una página que no existe</p>
-
-        <small>Pulse F5 para regresar</small>
+        <p className="warning">Usted ha ingresado a una página que no existe</p>
 
         <img src="" alt="" />
 
 
-    </div>
+   </>
   )
 }
 

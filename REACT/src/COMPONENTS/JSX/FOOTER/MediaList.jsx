@@ -2,7 +2,7 @@ import React from 'react'
 
 function MediaList(href, target, src, alt) {
   return (
-    <div>
+    <>
 
     <li>
 
@@ -14,7 +14,7 @@ function MediaList(href, target, src, alt) {
 
     </li>
 
-    </div>
+    </>
   )
 }
 
