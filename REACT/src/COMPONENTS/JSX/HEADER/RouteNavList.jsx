@@ -1,5 +1,5 @@
-import React from 'react'
-import LI from './LI'
+
+import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
@@ -8,22 +8,18 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 //El img sólo aplica para el li de logo en el nav y para las imágenes del footer. Es o img o FontAwesomeIcon
 
-function LI(i, href, titlePage, src, alt, imgClass, target) {
+function RouteNavList(i, src, alt, navText, route) {
   return (
     <div>
 
-      <li>
-
-       <img src={src} alt={alt} className={imgClass} />
+       <img src={src} alt={alt} className="logo" />
 
         <FontAwesomeIcon icon={i}/>
 
-        <a href={href} title={titlePage} className='domine-bold' target={target}>{titlePage}</a>
-
-      </li>
+        <NavLink to={route}>{navText}</NavLink>
 
     </div>
   );
 };
 
-export default LI;
+export default RouteNavList;

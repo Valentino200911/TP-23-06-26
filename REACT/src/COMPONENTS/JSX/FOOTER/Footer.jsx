@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import FooterContacts from './FooterContacts'
 
 function Footer() {

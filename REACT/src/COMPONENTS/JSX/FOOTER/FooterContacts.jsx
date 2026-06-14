@@ -1,42 +1,39 @@
 import React from 'react'
-import LI from '../HEADER/LI'
+import MediaList from './MediaList'
+
 
 function FooterContacts() {
   return (
     <div>
         <ul>
 
-            <LI 
+            <MediaList 
                 href='https://www.booking.com'
                 target='blank'
-                title='Booking'
+                alt='Booking'
                 src='-' //Enlazar con img
-                imgClass='media' //Enlazar con css
             />  
 
 
-            <LI 
+            <MediaList 
                 href='https://www.facebook.com'
                 target='blank'
-                title='Facebook'
+                alt='Facebook'
                 src='-' //Enlazar con img
-                imgClass='media' //Enlazar con css
             />  
 
-            <LI 
+            <MediaList 
                 href='https://www.instagram.com'
                 target='blank'
-                title='Instagram'
+                alt='Instagram'
                 src='-' //Enlazar con img
-                imgClass='media' //Enlazar con css
             />
 
-            <LI 
+            <MediaList 
                 href='https://www.whatsapp.com/?lang=es'
                 target='blank'
-                title='Whatsapp'
+                alt='Whatsapp'
                 src='-' //Enlazar con img
-                imgClass='media' //Enlazar con css
             />        
 
         </ul>

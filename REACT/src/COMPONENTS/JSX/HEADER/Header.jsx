@@ -1,10 +1,13 @@
-import React from 'react'
+
+import Nav from './Nav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function Header() {
   return (
-    <div>Header</div>
+    <header>
+      <Nav/>
+    </header>
   )
 }
 
