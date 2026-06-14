@@ -33,20 +33,22 @@ ul.services_list {
     list-style: none;
     font-weight: bold;
     line-height: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0;
     padding: 0;
     text-align: center;
+    padding: 0 14% 1rem 14%;
 }
 
 div p.faculty-glyphic-regular {
     padding: 0 9%;
 }
-
-ul.services-list li.faculty-glyphic-regular {
-    padding: 0 14%;
+ 
+p.servicesText {
+ padding: 0 !important;
 }
 
 .spec_title {
     margin: 2rem 0;
+    padding: 0 14% !important;
 }

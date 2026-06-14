@@ -8,6 +8,8 @@ function Cabañas() {
         description="Esta Cabaña, con gran capacidad, es perfecta para hospedajes cortos en familia o amigos, además desde la galería posee una hermosa vista hacia las montañas."
       />
 
+      <h3 className="faculty-glyphic-regular">Servicios</h3>
+
       <ul className="services_list">
         <li className="faculty-glyphic-regular">
           Capacidad Máxima: 7 personas.
@@ -82,6 +84,8 @@ function Cabañas() {
         title="Cabaña 2"
         description="Esta Cabaña, es perfecta para parejas que deseen pasar tiempo rodeados de naturaleza. Además, su galería es perfecta para sentarse, respirar el aire puro y apreciar el paisaje."
       />
+
+      <h3 className="faculty-glyphic-regular">Servicios</h3>
 
       <ul className="services_list">
         <li className="faculty-glyphic-regular">

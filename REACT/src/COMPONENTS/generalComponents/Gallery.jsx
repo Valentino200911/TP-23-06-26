@@ -10,25 +10,21 @@ function Gallery({title, description}) {
         <Images
         src=""
         alt=""
-        className="picture"
         />
 
         <Images
         src=""
         alt=""
-        className="picture"
         />
 
         <Images
         src=""
         alt=""
-        className="picture"
         />
 
         <Images
         src=""
         alt=""
-        className="picture"
         />
 
     </div>

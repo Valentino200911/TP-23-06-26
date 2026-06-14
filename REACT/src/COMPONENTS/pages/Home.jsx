@@ -5,7 +5,7 @@ function Home() {
 
     <>
 
-    <img src="" alt="" className="main_picture"/>
+    <img src="/heroSection.png" alt="" className="main_picture"/>
 
     <div>
     

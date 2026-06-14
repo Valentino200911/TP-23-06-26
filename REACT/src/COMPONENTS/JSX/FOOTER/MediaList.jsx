@@ -6,7 +6,7 @@ function MediaList(href, target, src, alt) {
 
     <li>
 
-    <a href={href} target={target}>
+    <a href={href} target='_blank'>
 
     <img src={src} alt={alt} className='media'/>
 

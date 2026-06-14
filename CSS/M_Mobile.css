@@ -77,6 +77,9 @@
         margin: 0 auto 1rem auto;
     }
 
+    p.introText {
+    padding: 0 !important;
+}
 
     /* CABAÑAS */
 
@@ -93,10 +96,10 @@
 
     ul.services_list {
         display: block;
-        list-style: disc;
+        list-style: none;
         font-weight: bold;
-        line-height: 0.75rem;
-        font-size: 1.5rem;
+        line-height: 1.25rem;
+        font-size: 1.25rem;
         margin: 0;
     }
 
@@ -189,6 +192,7 @@
         font-size: 0.9rem;
         padding: 0 1rem;
     }
+
 
 
 }

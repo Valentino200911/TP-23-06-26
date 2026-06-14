@@ -1,10 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-function Logo(src, alt) {
+function Logo() {
   return (
     <li>
 
-    <img src={src} alt={alt} className="logo" />
+    <NavLink to="/">
+    
+    <img src="/logo.png" alt="Cabañas Aguaribay" className="logo" />
+    
+    </NavLink>
 
     </li>
   )

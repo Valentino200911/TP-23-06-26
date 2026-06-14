@@ -13,7 +13,7 @@ function Nav() {
   return (
     <nav className='navbar navlist'>
 
-      {/* El NavLink está para verificar el funcionamiento del ruteo general debido a que RouteNavList no permite escribir el NavText (ver RouteNavList.jsx) */}
+      {/* El NavLink está para verificar el funcionamiento del ruteo general debido a que RouteNavList no permite escribir el NavText que llevaría a otras páginas (ver RouteNavList.jsx) */}
 
       {/* Esto debe borrarse */}
 
@@ -41,9 +41,7 @@ function Nav() {
 
       <ul className='navlist'>
 
-      <Logo
-      src=""
-      alt="" />
+      <Logo/>
 
       <RouteNavList
       i="faHouse"

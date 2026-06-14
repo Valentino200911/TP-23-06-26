@@ -112,3 +112,12 @@ img.card_image {
     font-size: 1.5rem;
     margin: 0;
 }
+
+p.introText {
+    padding: 0 !important;
+}
+
+ul.activities_list li.faculty-glyphic-regular{
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}

@@ -35,13 +35,13 @@ function ServiciosTuristicos() {
 
         </div>
 
-        <ul>
+        <ul className="activities_list">
           
-            <li></li>
+            <li className="faculty-glyphic-regular">Senderismo</li>
 
-            <li></li>
+            <li className="faculty-glyphic-regular">Ciclismo</li>
 
-            <li></li>
+            <li className="faculty-glyphic-regular">Equitación (Costo Adicional)</li>
 
         </ul>
       </section>
