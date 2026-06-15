@@ -107,6 +107,17 @@ h6 {
 
 /* SPECIAL TITLES AND P */
 
+h2.loadingElements, p.loadingElements{
+    text-align: center;
+}
+
+img.loadingElements{
+    margin: 0 8%  !important;
+    width: 80%;
+    height: 40%;
+}
+
+
 h2.faculty-glyphic-regular {
     font-size: 1.85rem;
 }

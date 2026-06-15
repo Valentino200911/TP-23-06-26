@@ -1,27 +1,23 @@
-import React from 'react'
-
 function Card(cardTitle, src, alt, cardText, href) {
   return (
     <>
+      <div className="card">
+        <h3 className="domine-bold card_title">
+          
+          {/* {cardTitle} */}
+          
+        </h3>
 
-        <div className='card'>
+        <img src={src} alt={alt} className="card_image" />
 
-          <h3 className='domine-bold card_title'>{cardTitle}</h3>
+        <p className="cardtext">{cardText}</p>
 
-          <img src= {src} alt={alt} class="card_image"/>
-
-          <p className='cardtext'>{cardText}</p>
-
-          <a href={href} target='blank' title={cardTitle}>
-
-          <button id='info'>Más Información</button>
-
-          </a>
-
-        </div>
-
+        <a href={href} target="_blank">
+          <button id="info">Más Información</button>
+        </a>
+      </div>
     </>
-  )
+  );
 }
 
-export default Card
+export default Card;

@@ -16,22 +16,22 @@ function ServiciosTuristicos() {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            class="embed_map"></iframe>
+            class="embed_map"/>
         </div>
       </section>
 
       <section>
         <h3 className="faculty-glyphic-regular">Servicios Turísticos</h3>
 
-        <div className="card-container">
+        <div className="card_container">
 
-          {/* <Card cardTitle="" src="" alt="" cardText="" href="" />
+          <Card cardTitle="A" src="A" alt="A" cardText="A" href="https://www.argentina.gob.ar/cultura/monumentos/cristo-redentor-tucuman"/>
 
-          <Card cardTitle="" src="" alt="" cardText="" href="" />
+          <Card cardTitle="A" src="A" alt="A" cardText="A" href="A"/>
 
-          <Card cardTitle="" src="" alt="" cardText="" href="" />
+          <Card cardTitle="A" src="A" alt="A" cardText="A" href="A"/>
 
-          <Card cardTitle="" src="" alt="" cardText="" href="" /> */}
+          <Card cardTitle="A" src="A" alt="A" cardText="A" href="A"/>
 
         </div>
 
