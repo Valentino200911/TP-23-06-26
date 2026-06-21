@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MediaList(href, target, src, alt) {
+function MediaList({href, target, src, alt}) {
   return (
     <>
 

@@ -11,41 +11,15 @@ import Logo from './Logo'
 function Nav() {
 
   return (
-    <nav className='navbar navlist'>
+    <nav className='navBar navList'>
 
-      {/* El NavLink está para verificar el funcionamiento del ruteo general debido a que RouteNavList no permite escribir el NavText que llevaría a otras páginas (ver RouteNavList.jsx) */}
-
-      {/* Esto debe borrarse */}
-
-      <NavLink to="/">Home</NavLink>
-
-      <br />
-
-      <NavLink to="/cabañas">Cabañas</NavLink>
-
-      <br />
-
-      <NavLink to="/serviciosturisticos">Servicios Turísticos y Ubicación</NavLink>
-
-      <br />
-
-      <NavLink to="/contacto">Contacto</NavLink>
-
-      <br />
-
-      <NavLink to="/naturaleza">Naturaleza</NavLink>
-
-      <br />
-
-      <NavLink to="/indice">Indice</NavLink>
-
-      <ul className='navlist'>
+      <ul className='navList'>
 
       <Logo/>
 
       <RouteNavList
       i="faHouse"
-      navText="Home"
+      navText="Página Principal"
       route="/"/>
 
       <RouteNavList
@@ -57,17 +31,17 @@ function Nav() {
       <RouteNavList
       i=""
       navText="Servicios Turísticos y Ubicación"
-      route=""/>
+      route="/serviciosturisticos"/>
 
       <RouteNavList
       i=""
       navText="Contacto"
-      route=""/>
+      route="/contacto"/>
 
       <RouteNavList
       i=""
       navText="Naturaleza"
-      route=""/>
+      route="/naturaleza"/>
 
       </ul>
 

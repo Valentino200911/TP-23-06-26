@@ -1,4 +1,4 @@
-import useIndexNature from "../../hooks/nature/useIndexNature"
+import useIndexNature from "../../hooks/nature/useGetNature"
 
 function GeneralError() {
 
@@ -6,9 +6,9 @@ function GeneralError() {
 
   return (
     <>
-    <h2 className="faculty-glyphic-regular warning loadingElements">ERROR AL TRAER LOS ELEMENTOS</h2>
+    <h1 className="faculty-glyphic-regular warning loadingElements">ERROR AL TRAER LOS ELEMENTOS</h1>
 
-    <p className="loadingElements warning">{error?.message || String(error)}</p>
+    <p className="loadingElements faculty-glyphic-regular warning">{error?.message || String(error)}</p>
     </>
   )
 }

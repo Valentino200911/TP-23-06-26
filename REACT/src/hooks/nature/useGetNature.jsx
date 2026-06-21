@@ -2,14 +2,16 @@ import { useState } from "react";
 import { API_URL } from "../../config";
 import { useEffect } from "react";
 
-//indexNature = getProducts, useIndexNature = useGetProducts
+//getNature = getProducts, useGetNature = useGetProducts
 
-function useIndexNature() {
+//Product aparece en Naturaleza.css y Naturaleza.jsx
+
+function useGetNature() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [products, setProducts] = useState([]);
+  const [bioelements, setBioelements] = useState([]);
 
-  const indexNature = async (url) => {
+  const getNature = async (url) => {
     try {
       setLoading(true);
       setError(null);
@@ -25,21 +27,21 @@ function useIndexNature() {
 
       const data = await response.json();
 
-      setProducts(data);
+      setBioelements(data);
     } catch (error) {
       console.error(error);
       setError(error);
-      setProducts([]);
+      setBioelements([]);
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    indexNature(`${API_URL}products`);
+    getNature(`${API_URL}products`);
   }, []);
 
-  return {error, products, loading};
+  return {error, bioelements, loading};
 }
 
-export default useIndexNature;
+export default useGetNature;

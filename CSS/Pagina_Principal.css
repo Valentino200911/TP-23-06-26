@@ -46,7 +46,7 @@ p {
 
 /* NAV */
 
-nav.navbar {
+nav.navBar {
     background-color: rgb(40, 58, 132)
 }
 
@@ -54,7 +54,7 @@ h2.title {
     color: rgb(245, 222, 179);
 }
 
-ul.navlist {
+ul.navList {
     font-weight: bold;
     line-height: 3rem;
     text-decoration: none;
@@ -142,13 +142,13 @@ p.faculty-glyphic-regular {
 
 }
 
-.intro_p {
+.introP {
     padding: 0 10%;
 }
 
 /* HEROSECTION */
 
-.main_picture {
+.mainPicture {
     border-radius: 10%;
     width: 80vw;
     max-width: 100%;
@@ -161,7 +161,7 @@ p.faculty-glyphic-regular {
     object-fit: fill;
 }
 
-.main_picture:hover {
+.mainPicture:hover {
     filter: drop-shadow(0 0 30px rgb(245, 222, 179));
     transform: scale(1.02);
     transition: all 0.5s ease;
@@ -178,7 +178,7 @@ i {
 
 /* FOOTER */
 
-footer.footbar {
+footer.footBar {
     background-color: rgb(40, 58, 132);
     padding-bottom: 0.25rem;
 }
@@ -199,3 +199,4 @@ footer div p {
     margin: 1rem 0.5rem 1rem 0.5rem;
     cursor: pointer;
 }
+

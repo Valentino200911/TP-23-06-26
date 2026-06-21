@@ -1,8 +1,8 @@
 @media (min-width: 0px) and (max-width: 767px) {
-   
+
     /* PÁGINA PRINCIPAL (index.html) */
 
-    ul.navlist {
+    ul.navList {
         display: flex;
         flex-direction: column;
         font-size: 1.2rem;
@@ -43,16 +43,15 @@
         font-size: 1.2rem;
         margin-bottom: 1rem;
         margin: 0 0 0.5rem 0.25rem
-
     }
 
-    .main_picture {
+    .mainPicture {
         border-radius: 5%;
         width: 90vw;
         height: 36vh;
     }
 
-    .intro_p {
+    .introP {
         padding: 0 5%;
     }
 
@@ -69,7 +68,7 @@
 
     /* SERVICIOS TURÍSTICOS Y UBICACIÓN */
 
-    .embed_map {
+    .embedMap {
         display: block;
         border-radius: 5%;
         height: 32rem;
@@ -78,8 +77,8 @@
     }
 
     p.introText {
-    padding: 0 !important;
-}
+        padding: 0 !important;
+    }
 
     /* CABAÑAS */
 
@@ -90,11 +89,11 @@
         margin: 0 0 0.25rem 0;
     }
 
-    div p.faculty-glyphic-regular {
+    div p.faculty-glyphic-regular.introP {
         padding: 0 5% !important;
     }
 
-    ul.services_list {
+    ul.servicesList {
         display: block;
         list-style: none;
         font-weight: bold;
@@ -124,7 +123,7 @@
         width: 20rem;
     }
 
-    div.selector_container {
+    div.selectorContainer {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -134,7 +133,7 @@
         gap: 0.35rem;
     }
 
-    .text_selector {
+    .textSelector {
         padding: 0 5% !important;
     }
 
@@ -142,7 +141,7 @@
         margin-top: 2.25rem;
     }
 
-    div.form_group select,
+    div.formGroup select,
     option {
         width: 20rem;
         margin: 0.25rem auto 0.25rem auto;
@@ -150,7 +149,7 @@
         align-self: center;
     }
 
-    .area_container {
+    .areaContainer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -158,7 +157,7 @@
 
     }
 
-    div.area_container label {
+    div.areaContainer label {
         margin-top: 0.5rem;
         text-align: left;
     }
@@ -168,7 +167,7 @@
         width: 20rem;
     }
 
-    .button_container {
+    .buttonContainer {
         display: flex;
         gap: 1rem;
         margin: 1rem auto;

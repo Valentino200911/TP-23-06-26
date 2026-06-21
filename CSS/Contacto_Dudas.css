@@ -31,7 +31,7 @@ input {
     text-align: center;
 }
 
-.area_container {
+.areaContainer {
     display: flex;
     vertical-align: middle;
 }
@@ -58,7 +58,7 @@ textarea {
     font-size: 1rem;
 }
 
-div.form_group select,
+div.formGroup select,
 option {
     width: 36rem;
     height: 2rem;
@@ -82,7 +82,7 @@ option {
     margin: 2.5rem 0 2.5rem 0;
 }
 
-div.selector_container {
+div.selectorContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,11 +90,11 @@ div.selector_container {
     gap: 2rem;
 }
 
-.text_selector {
+.textSelector {
     padding: 0 34% !important;
 }
 
-.button_container {
+.buttonContainer {
     display: flex;
     margin: 1rem auto;
     align-items: center;

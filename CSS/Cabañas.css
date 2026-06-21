@@ -18,7 +18,7 @@
     transition: all 0.5s ease;
 }
 
-.divstyle {
+.divStyle {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,7 +28,7 @@
 
 /* SERVICES */
 
-ul.services_list {
+ul.servicesList {
     display: block;
     list-style: none;
     font-weight: bold;
@@ -40,7 +40,7 @@ ul.services_list {
     padding: 0 14% 1rem 14%;
 }
 
-div p.faculty-glyphic-regular {
+div p.faculty-glyphic-regular.introP {
     padding: 0 9%;
 }
  
@@ -48,7 +48,7 @@ p.servicesText {
  padding: 0 !important;
 }
 
-.spec_title {
+.specTitle {
     margin: 2rem 0;
     padding: 0 14% !important;
 }

@@ -1,13 +1,12 @@
 //Sería el equivalente a un Product.jsx
 
-import useIndexNature from "../../hooks/nature/useIndexNature";
+import useGetNature from "../../hooks/nature/useGetNature";
 import GeneralError from "../generalComponents/GeneralError";
 import GeneralLoading from "../generalComponents/GeneralLoading";
-
-//Debido a errores de componetización de la Card, la maquetación se realizará temporalmente aquí
+import NatureCard from "../generalComponents/NatureCard";
 
 function Naturaleza() {
-  const { error, loading, products } = useIndexNature();
+  const { error, loading, bioelements } = useGetNature();
 
   if (error) {
     return (
@@ -29,31 +28,23 @@ function Naturaleza() {
     <>
       <h2 className="faculty-glyphic-regular">Naturaleza</h2>
 
-      <div className="card_container">
-        {products.map((product) => (
+      <div className="cardContainer">
 
-          <div className="cardNature" key={product.id}>
+        {bioelements.map((bioelement) => (
 
-            <h3 class="domine-bold card_title">{product.name}</h3>
+          <div className="cardNature" key={bioelement.id}>
 
-            <h4 className="domine-bold cardSecondTitle">{product.binomialName}</h4>
+            <NatureCard
 
-            <p className="cardtext">{product.description} </p>
-
-            <img src={product.image} alt={product.name} className="card_image " />
-
-            <a href={product.info} target="_blank">
-
-            <button id="info">Más Información</button>
-
-            </a>
-
-
-
-
-
+            cardTitleNature={bioelement.name} 
+            cardSecondTitle={bioelement.binomialName}
+            natureDescription={bioelement.description}
+            src={bioelement.image}
+            />
 
           </div>
+
+          
         ))}
 
       </div>

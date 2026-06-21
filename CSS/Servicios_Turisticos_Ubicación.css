@@ -1,11 +1,11 @@
 /* VARIOUS */
 
-div.map_container {
+div.mapContainer {
     display: flex;
     justify-content: center;
 }
 
-.embed_map {
+.embedMap {
     border-radius: 10%;
     border: solid rgb(0, 0, 0) 4px !important;
     height: 32rem;
@@ -15,7 +15,7 @@ div.map_container {
 
 /* CARD */
 
-.card_container {
+.cardContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ div.map_container {
     transition: all 0.5s ease;
 }
 
-.card_title {
+.cardTitle {
     display: block;
     font-size: 1.25rem;
     background-color: rgb(65, 152, 94);
@@ -68,7 +68,7 @@ h6 {
 }
 
 
-.cardtext {
+.cardText {
     overflow: hidden;
     font-size: 1rem;
     display: block;
@@ -78,7 +78,7 @@ h6 {
     margin: 0 0.25rem;
 }
 
-img.card_image {
+img.cardImage {
     width: 90%;
     height: 70%;
     justify-items: center;
@@ -106,7 +106,7 @@ img.card_image {
 
 /* TEXT */
 
-.activities_list {
+.activitiesList {
     text-decoration: none;
     list-style: circle;
     font-weight: bold;
@@ -119,7 +119,8 @@ p.introText {
     padding: 0 !important;
 }
 
-ul.activities_list li.faculty-glyphic-regular{
+ul.activitiesList li.faculty-glyphic-regular{
     font-size: 1.25rem;
     margin: 0 0 1rem 0;
 }
+

@@ -54,7 +54,7 @@ export const router = createBrowserRouter([
             },
 
             {
-                path: "/indice",
+                path: "/naturaleza/indice",
 
                 element: <Indice />                
 

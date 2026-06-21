@@ -1,7 +1,7 @@
 //Esto aplica para las imágenes de la galería
 
 
-function Images(src, alt, className) {
+function Images({src, alt, className}) {
   return (
     <>
     

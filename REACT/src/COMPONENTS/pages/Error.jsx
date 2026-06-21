@@ -3,9 +3,9 @@ function Error() {
   return (
     <>
 
-        <h1 className="warning">ERROR 404</h1>
+        <h1 className="warning faculty-glyphic-regular">ERROR 404</h1>
 
-        <p className="warning">Usted ha ingresado a una página que no existe</p>
+        <p className="warning faculty-glyphic-regular">Usted ha ingresado a una página que no existe</p>
 
         <img src="" alt="" />
 

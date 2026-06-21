@@ -8,7 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 //El img sólo aplica para el li de logo en el nav y para las imágenes del footer. Es o img o FontAwesomeIcon
 
-function RouteNavList(i, navText, route) {
+function RouteNavList({i, navText, route}) {
   return (
     <li>
 
