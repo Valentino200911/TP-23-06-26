@@ -31,7 +31,11 @@ function ContactForm() {
 
         <Select />
 
-        <Textarea/>
+        <Textarea
+        id="Comentario"
+        label="Comentario"
+        placeholder="Escriba aquí"
+        />
 
         <div className="buttonContainer">
 

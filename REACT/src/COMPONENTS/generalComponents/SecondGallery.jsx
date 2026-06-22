@@ -10,21 +10,25 @@ function SecondGallery({title, description}) {
         <Images
         src="/cabaña2/Cabaña 2.2.jpg"
         alt="Fotografía de Cabaña 2"
+        className="picture"
         />
 
         <Images
         src="/cabaña2/Cabaña 2.2.jpg"
         alt="Fotografía de Cabaña 2"
+        className="picture"
         />
 
         <Images
         src="/cabaña2/Cabaña 2.3.jpg"
         alt="Fotografía de Cabaña 2"
+        className="picture"
         />
 
         <Images
         src="/cabaña2/Cabaña 2.4.jpg"
         alt="Fotografía de Cabaña 2"
+        className="picture"
         />
 
 

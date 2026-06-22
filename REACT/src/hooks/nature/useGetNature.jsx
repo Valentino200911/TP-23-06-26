@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 //getNature = getProducts, useGetNature = useGetProducts
 
-//Product aparece en Naturaleza.css y Naturaleza.jsx
+//En getNature(`${API_URL}products`);, products se mantiene debido a que es la configuración normal de server, lo mismo ocurre en usePostNature
 
 function useGetNature() {
   const [error, setError] = useState(null);

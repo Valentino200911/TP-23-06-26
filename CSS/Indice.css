@@ -1,0 +1,22 @@
+#delete{
+    color: rgb(220, 20, 60);
+}
+
+#edit{
+    color: rgb(5, 111, 233);
+}
+
+.previewImageContainer{
+    display: flex;
+    justify-content: center ;
+}
+
+.previewImage{
+    width: 280.8px;
+    height: 356px;
+    border-radius: 5%;
+    border: solid;
+    border-color: rgb(174, 23, 23);
+    border-width: 2px;
+    margin: 0 0 1.5rem 0;
+}

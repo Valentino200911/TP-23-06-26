@@ -32,7 +32,6 @@ input {
 }
 
 .areaContainer {
-    display: flex;
     vertical-align: middle;
 }
 

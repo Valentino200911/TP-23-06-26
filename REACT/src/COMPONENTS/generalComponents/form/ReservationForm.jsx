@@ -75,7 +75,11 @@ function ReservationForm() {
 
         </div>
 
-        <Textarea/>
+        <Textarea
+        id="Comentario"
+        label="Comentario"
+        placeholder="Escriba aquí"
+        />
 
         <div className="buttonContainer">
 

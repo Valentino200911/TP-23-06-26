@@ -40,6 +40,7 @@ function Naturaleza() {
             cardSecondTitle={bioelement.binomialName}
             natureDescription={bioelement.description}
             src={bioelement.image}
+            href={bioelement.info}
             />
 
           </div>

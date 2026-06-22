@@ -6,7 +6,6 @@
       "binomialName": "Vachellia aroma",
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
       "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
     },
@@ -16,7 +15,6 @@
       "binomialName": "Vachellia aroma",
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
       "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
     },
@@ -26,7 +24,6 @@
       "binomialName": "Vachellia aroma",
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
       "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
     },
@@ -36,17 +33,15 @@
       "binomialName": "Vachellia aroma",
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
       "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
-    },        
+    },
     {
       "id": 5,
       "name": "Tusca",
       "binomialName": "Vachellia aroma",
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
       "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
     },
@@ -56,7 +51,6 @@
       "binomialName": "Vachellia aroma",
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
       "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
     },
@@ -66,7 +60,6 @@
       "binomialName": "Vachellia aroma",
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
       "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
     },
@@ -76,9 +69,8 @@
       "binomialName": "Vachellia aroma",
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg"
-    }     
+    }
   ],
   "type": [
     {

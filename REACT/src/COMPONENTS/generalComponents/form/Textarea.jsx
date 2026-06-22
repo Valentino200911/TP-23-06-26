@@ -1,12 +1,17 @@
 
-function Textarea() {
+function Textarea({id, label, placeholder, value, onChange}) {
   return (
     <>
-    <h4 className="faculty-glyphic-regular">Comentario</h4>
 
     <div className="areaContainer">
 
-    <textarea id="Comentario" placeholder="Escriba aquí"></textarea>
+    <label htmlFor={id} className="faculty-glyphic-regular">{label}</label>
+
+    <textarea id={id} 
+    placeholder={placeholder} 
+    value={value} 
+    className="faculty-glyphic-regular"
+    onChange={onChange}></textarea>
 
     </div>
     

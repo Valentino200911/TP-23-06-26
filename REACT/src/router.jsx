@@ -7,6 +7,7 @@ import ServiciosTuristicos from './components/pages/ServiciosTuristicos'
 import Naturaleza from './components/pages/Naturaleza'
 import Indice from './components/pages/Indice'
 import Contacto from './components/pages/Contacto'
+import Editor from './components/pages/Editor'
 
 export const router = createBrowserRouter([
 
@@ -57,6 +58,13 @@ export const router = createBrowserRouter([
                 path: "/naturaleza/indice",
 
                 element: <Indice />                
+
+            },
+
+            {
+                path: "/naturaleza/editor",
+
+                element: <Editor />                
 
             },
 

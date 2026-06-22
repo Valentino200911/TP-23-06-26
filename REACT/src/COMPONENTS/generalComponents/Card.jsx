@@ -10,7 +10,7 @@ function Card({cardTitle, src, alt, cardText, href}) {
 
         <a href={href} target="_blank">
           
-          <button id="info">Más Información</button>
+          <button id="infoTuristicalCard">Más Información</button>
         </a>
       </div>
     </>

@@ -6,10 +6,12 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Images from "../generalComponents/Images";
 
-//Sería el equivalente a un CreateProductPage.jsx
+//Sería el equivalente a un EditProductPage.jsx
 //Consideré que sería mejor tener el formulario controlado con inputs componetizados aquí en vez de en generalComponents/form
 
-function Indice() {
+function Editor() {
+  const [error, setError] = useState(null)
+
   const [form, setForm] = useState({
     name: "",
     binomialName: "",
@@ -18,9 +20,9 @@ function Indice() {
     info: "",
   });
 
-  const navigate = useNavigate();
 
-  const { error, postNature } = usePostNature();
+
+  const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     const { id, value, type } = event.target;
@@ -37,7 +39,7 @@ function Indice() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-    const sucess = await postNature(form);
+    const sucess = true;
 
     if (sucess) {
       setForm({
@@ -55,7 +57,7 @@ function Indice() {
   return (
     <>
       <h2 className="faculty-glyphic-regular">
-        Indexar y Crear registros para Naturaleza
+        Editar los registros de Naturaleza
       </h2>
 
       <form onSubmit={handleFormSubmit}>
@@ -110,7 +112,6 @@ function Indice() {
           
         </div>
 
-
         <Input
           type="text"
           name="URL y Más información sobre el elemento"
@@ -124,14 +125,7 @@ function Indice() {
           <Button
             type="submit"
             id="send"
-            buttonText="Indexar elemento"
-            className="faculty-glyphic-regular"
-          />
-
-          <Button
-            type="reset"
-            id="reset"
-            buttonText="Limpiar el Índice"
+            buttonText="Editar elemento"
             className="faculty-glyphic-regular"
           />
 
@@ -147,4 +141,4 @@ function Indice() {
   );
 }
 
-export default Indice;
+export default Editor;
