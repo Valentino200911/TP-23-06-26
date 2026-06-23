@@ -25,13 +25,10 @@ function useGetNatureById() {
       setError(error)
     } 
 
-  return {error, useGetNatureById};
+  }
+  
+  return {error, getNatureById};
+
 }
-
-export default useGetNatureById;
-
-}
-
-
 
 export default useGetNatureById

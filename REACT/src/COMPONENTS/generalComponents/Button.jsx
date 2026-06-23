@@ -1,5 +1,7 @@
 
 function Button({type, id, buttonText, className}) {
+  //Revisar el onClick del button
+
   return (
     <>
     

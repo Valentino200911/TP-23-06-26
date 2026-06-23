@@ -12,7 +12,7 @@ function usePostNature() {
       const response = await fetch(`${API_URL}products`, {
         method: "POST",
         headers: {
-            "Content-type": "application/json"
+            "Content-type": "Application/json"
         },
         body: JSON.stringify(formData)
         

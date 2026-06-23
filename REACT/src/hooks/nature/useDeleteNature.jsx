@@ -12,7 +12,7 @@ function useDeleteNature() {
       const response = await fetch(`${API_URL}products/${bioelementId}`, {
         method: "DELETE",
         headers: {
-            "Content-type": "application/json"
+            "Content-type": "Application/json"
         },
       });
 
@@ -31,8 +31,9 @@ function useDeleteNature() {
       return null
     } 
 
+  }
+  
   return {error, deleteNature };
-}
 
 }
 

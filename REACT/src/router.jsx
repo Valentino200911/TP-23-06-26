@@ -62,7 +62,7 @@ export const router = createBrowserRouter([
             },
 
             {
-                path: "/naturaleza/editor",
+                path: "/naturaleza/editor/:id",
 
                 element: <Editor />                
 

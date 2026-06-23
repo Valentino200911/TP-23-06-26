@@ -70,6 +70,14 @@
       "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
       "type": "65f8d0c2e391b1a0d83cf120",
       "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg"
+    },
+    {
+      "name": "Churqui",
+      "binomialName": "Vachellia caven",
+      "description": "Arbusto de hasta cinco metros de altura que se ubica en la región del NOA y del Litoral. ",
+      "image": "https://santiagoeducativo.com/wp-content/uploads/2017/02/Churqui-Flor.jpg",
+      "info": "https://es.wikipedia.org/wiki/Vachellia_caven",
+      "id": 9
     }
   ],
   "type": [

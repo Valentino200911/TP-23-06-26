@@ -1,17 +1,19 @@
 import Input from "../generalComponents/form/Input";
-import usePostNature from "../../hooks/nature/usePostNature";
 import Textarea from "../generalComponents/form/Textarea";
 import Button from "../generalComponents/Button";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import Images from "../generalComponents/Images";
+import NatureCard from "../generalComponents/NatureCard";
+import usePostNature from "../../hooks/nature/usePostNature";
+import useGetNatureById from "../../hooks/nature/useGetNatureById";
+import usePatchNature from "../../hooks/nature/usePatchNature";
 
 //Sería el equivalente a un EditProductPage.jsx
 //Consideré que sería mejor tener el formulario controlado con inputs componetizados aquí en vez de en generalComponents/form
+//Revisar la funcionalidad de este código
 
 function Editor() {
-  const [error, setError] = useState(null)
-
   const [form, setForm] = useState({
     name: "",
     binomialName: "",
@@ -20,28 +22,57 @@ function Editor() {
     info: "",
   });
 
+  const { error, patchNature } = usePatchNature();
 
+  const { error: getNatureByIdError, getNatureById } = useGetNatureById();
+
+  const { id } = useParams();
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const loadProduct = async () => {
+      const response = await getNatureById(id);
+
+      if (response) {
+        setForm({
+          name: response.name,
+          binomialName: response.binomialName,
+          description: response.description,
+          image: response.image,
+          info: response.info,
+        });
+      };
+    };
+
+    if (id) {
+      loadProduct();
+    } else {
+      console.log({id});
+    }
+
+  }, [id]);
+
+
+  
   const handleInputChange = (event) => {
     const { id, value, type } = event.target;
-
+    
     setForm({
       ...form,
-
+      
       [id]: type === "number" ? parseInt(value) || 0 : value,
     });
-
+    
     console.log(form);
   };
-
+  
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-
-    const sucess = true;
-
-    if (sucess) {
+    
+    const success = patchNature(form, id);
+    
+    if (success) {
       setForm({
         name: "",
         binomialName: "",
@@ -49,11 +80,12 @@ function Editor() {
         image: "",
         info: "",
       });
-
+      
       navigate("/naturaleza");
+
     }
   };
-
+  
   return (
     <>
       <h2 className="faculty-glyphic-regular">
@@ -97,19 +129,13 @@ function Editor() {
         />
 
         <div>
+          <h4 className="faculty-glyphic-regular">
+            Previsualización de la imagen (Insterte la URL)
+          </h4>
 
-        <h4 className="faculty-glyphic-regular">Previsualización de la imagen (Insterte la URL)</h4>
-
-        <div className="previewImageContainer">
-
-        <Images
-        src={form.image}
-        alt={form.name}
-        className="previewImage"
-        />
-
-        </div>
-          
+          <div className="previewImageContainer">
+            <Images src={form.image} alt={form.name} className="previewImage" />
+          </div>
         </div>
 
         <Input
@@ -121,6 +147,24 @@ function Editor() {
           onChange={handleInputChange}
         />
 
+        <div>
+          <h4 className="faculty-glyphic-regular">
+            Previsualización de la Tarjeta (llene todos los campos)
+          </h4>
+
+          <div className="cardContainer">
+            <div className="cardNature">
+              <NatureCard
+                cardTitleNature={form.name}
+                cardSecondTitle={form.binomialName}
+                natureDescription={form.description}
+                src={form.image}
+                info={form.info}
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="buttonContainer">
           <Button
             type="submit"
@@ -128,14 +172,13 @@ function Editor() {
             buttonText="Editar elemento"
             className="faculty-glyphic-regular"
           />
-
-          {error && (
-            <h3 className="faculty-glyphic-regular warning">
-              {error.message || error}
-            </h3>
-          )}
-
         </div>
+
+        {error && (
+          <h3 className="faculty-glyphic-regular warning">
+            {error.message || error}
+          </h3>
+        )}
       </form>
     </>
   );

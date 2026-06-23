@@ -1,9 +1,25 @@
 #delete{
-    color: rgb(220, 20, 60);
+    background-color: rgb(220, 20, 60);
+    border-radius: 25%;
+    border: solid rgb(0, 0, 0);
+    width: 4rem;
+    height: 3.25rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold ;
+    cursor: pointer;
 }
 
 #edit{
-    color: rgb(5, 111, 233);
+    background-color: rgb(5, 111, 233);
+    border-radius: 25%;
+    border: solid rgb(0, 0, 0);
+    width: 4rem;
+    height: 3.25rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold ;
+    cursor: pointer;
 }
 
 .previewImageContainer{

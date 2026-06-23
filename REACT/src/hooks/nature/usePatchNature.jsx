@@ -2,19 +2,18 @@ import { useState } from "react";
 import { API_URL } from "../../config";
 
 function usePatchNature() {
-
   const [error, setError] = useState(null);
 
   const patchNature = async (formData, bioelementId) => {
     try {
       setError(null);
 
-      const response = await fetch(`${API_URL}products/${ bioelementId}`, {
+      const response = await fetch(`${API_URL}products/${bioelementId}`, {
         method: "PATCH",
         headers: {
-            "Content-type": "application/json"
+          "Content-type": "Application/json",
         },
-        body: formData
+        body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
@@ -24,17 +23,15 @@ function usePatchNature() {
         );
       }
 
-    const data = await response.json();
-
+      const data = await response.json();
     } catch (error) {
       console.error(error);
-      setError(error)
-      return null
-    } 
+      setError(error);
+      return null;
+    }
+  };
 
-  return {error, patchNature };
+  return { error, patchNature };
 }
 
-}
-
-export default usePatchNature
+export default usePatchNature;

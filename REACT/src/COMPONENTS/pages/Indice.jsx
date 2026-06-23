@@ -5,6 +5,7 @@ import Button from "../generalComponents/Button";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Images from "../generalComponents/Images";
+import NatureCard from "../generalComponents/NatureCard"
 
 //Sería el equivalente a un CreateProductPage.jsx
 //Consideré que sería mejor tener el formulario controlado con inputs componetizados aquí en vez de en generalComponents/form
@@ -120,6 +121,28 @@ function Indice() {
           onChange={handleInputChange}
         />
 
+       <div>
+
+        <h4 className="faculty-glyphic-regular">Previsualización de la Tarjeta (llene todos los campos)</h4>
+
+        <div className="cardContainer">
+
+          <div className="cardNature">
+
+            <NatureCard
+            cardTitleNature={form.name}
+            cardSecondTitle={form.binomialName}
+            natureDescription={form.description}
+            src={form.image}
+            info={form.info}
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
         <div className="buttonContainer">
           <Button
             type="submit"
@@ -135,13 +158,14 @@ function Indice() {
             className="faculty-glyphic-regular"
           />
 
+        </div>
+
           {error && (
             <h3 className="faculty-glyphic-regular warning">
               {error.message || error}
             </h3>
           )}
 
-        </div>
       </form>
     </>
   );
