@@ -2,7 +2,6 @@ import { useState } from "react";
 import { API_URL } from "../../config";
 
 function useGetNatureById() {
-
   const [error, setError] = useState(null);
 
   const getNatureById = async (bioelementId) => {
@@ -18,17 +17,14 @@ function useGetNatureById() {
         );
       }
 
-    const data = await response.json();
-
+      const data = await response.json();
     } catch (error) {
       console.error(error);
-      setError(error)
-    } 
+      setError(error);
+    }
+  };
 
-  }
-  
-  return {error, getNatureById};
-
+  return { error, getNatureById };
 }
 
-export default useGetNatureById
+export default useGetNatureById;

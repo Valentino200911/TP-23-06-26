@@ -1,11 +1,11 @@
 
-function Button({type, id, buttonText, className}) {
+function Button({type, id, buttonText, className, onClick}) {
   //Revisar el onClick del button
 
   return (
     <>
     
-    <button type={type} id={id} className={className}>{buttonText}</button>
+    <button type={type} id={id} className={className} onClick={onClick}>{buttonText}</button>
 
     </>
   )

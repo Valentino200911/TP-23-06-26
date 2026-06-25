@@ -41,7 +41,7 @@ function useGetNature() {
     getNature(`${API_URL}products`);
   }, []);
 
-  return {error, bioelements, loading};
+  return { error, bioelements, loading };
 }
 
 export default useGetNature;

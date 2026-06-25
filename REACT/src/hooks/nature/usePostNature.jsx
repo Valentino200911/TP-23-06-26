@@ -2,48 +2,41 @@ import { useState } from "react";
 import { API_URL } from "../../config";
 
 function usePostNature() {
-    const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
 
   const postNature = async (formData) => {
-      setError(null);
+    setError(null);
 
     try {
-
       const response = await fetch(`${API_URL}products`, {
         method: "POST",
         headers: {
-            "Content-type": "Application/json"
+          "Content-type": "Application/json",
         },
-        body: JSON.stringify(formData)
-        
-
+        body: JSON.stringify(formData),
       });
 
-        if (!response.ok) {
+      if (!response.ok) {
         throw new Error(
           "Error al enviar los registros desde el Índice",
           response.status,
         );
-    }
+      }
 
-    const data = await response.json();
+      const data = await response.json();
 
-    //Para poder visualizar el envío en consola
-    console.log({data});
-    
+      //Para poder visualizar el envío en consola
+      console.log({ data });
 
-    return data
-
+      return data;
     } catch (error) {
-        console.error("Error al crear el producto desde el Índice", error);
-        setError(error);
-        return null
+      console.error("Error al crear el producto desde el Índice", error);
+      setError(error);
+      return null;
     } finally {
-      
     }
-  };    
-  return {error, postNature}
+  };
+  return { error, postNature };
 }
 
-
-export default usePostNature
+export default usePostNature;

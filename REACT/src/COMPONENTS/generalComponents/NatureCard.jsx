@@ -6,6 +6,7 @@ function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, s
   const navigate = useNavigate()
 
   const handleEditProduct = (event, bioelementId) => {
+
     event.stopPropagation()
 
     navigate(`/naturaleza/editor/${bioelementId}`)
@@ -30,7 +31,8 @@ function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, s
             type="#"
             id="edit"
             buttonText="Editar"
-            // onClick={(event)=>handleEditProduct(event, bioelement.id)}
+            className="faculty-glyphic-regular"
+            onClick={(event)=>handleEditProduct(event, bioelement.id)}
             />
 
             <a href={href} target="_blank">

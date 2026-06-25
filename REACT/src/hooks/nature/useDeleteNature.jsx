@@ -2,17 +2,16 @@ import { useState } from "react";
 import { API_URL } from "../../config";
 
 function useDeleteNature() {
-
   const [error, setError] = useState(null);
 
-  const deleteNature = async ( bioelementId) => {
+  const deleteNature = async (bioelementId) => {
     try {
       setError(null);
 
       const response = await fetch(`${API_URL}products/${bioelementId}`, {
         method: "DELETE",
         headers: {
-            "Content-type": "Application/json"
+          "Content-type": "Application/json",
         },
       });
 
@@ -23,18 +22,15 @@ function useDeleteNature() {
         );
       }
 
-    const data = await response.json();
-
+      const data = await response.json();
     } catch (error) {
       console.error(error);
-      setError(error)
-      return null
-    } 
+      setError(error);
+      return null;
+    }
+  };
 
-  }
-  
-  return {error, deleteNature };
-
+  return { error, deleteNature };
 }
 
-export default useDeleteNature
+export default useDeleteNature;

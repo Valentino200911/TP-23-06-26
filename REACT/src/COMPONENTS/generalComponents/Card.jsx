@@ -1,3 +1,5 @@
+import Button from "./Button"
+
 function Card({cardTitle, src, alt, cardText, href}) {
   return (
     <>
@@ -10,7 +12,13 @@ function Card({cardTitle, src, alt, cardText, href}) {
 
         <a href={href} target="_blank">
           
-          <button id="infoTuristicalCard">Más Información</button>
+          <Button
+          type="#"
+          id="infoTuristicalCard"
+          className="faculty-glyphic-regular"
+          buttonText="Más Información"
+          />
+          
         </a>
       </div>
     </>
