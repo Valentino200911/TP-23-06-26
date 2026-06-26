@@ -1,16 +1,8 @@
 import { useNavigate } from "react-router-dom"
 import Button from "./Button"
+import Images from "./Images"
 
-function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, src, href}) {
-
-  const navigate = useNavigate()
-
-  const handleEditProduct = (event, bioelementId) => {
-
-    event.stopPropagation()
-
-    navigate(`/naturaleza/editor/${bioelementId}`)
-  }
+function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, src, href, onClickEdit, onClickDelete}) {
 
   return (
           <>
@@ -21,18 +13,19 @@ function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, s
 
             <p className="cardTextNature">{natureDescription} </p>
 
-            <img src={src} alt={cardTitleNature} className="cardImageNature" />
-
+            <Images
+              src={src}
+              alt={cardTitleNature}
+              className="cardImageNature" />
 
             <div className="buttonNatureContainer">
-
 
             <Button
             type="#"
             id="edit"
             buttonText="Editar"
             className="faculty-glyphic-regular"
-            onClick={(event)=>handleEditProduct(event, bioelement.id)}
+            onClick={onClickEdit}
             />
 
             <a href={href} target="_blank">
@@ -51,7 +44,7 @@ function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, s
             id="delete"
             buttonText="Borrar"
             className="faculty-glyphic-regular"
-            // onClick={(event)=>handleEditProduct(event, bioelement.id)}
+            onClick={onClickDelete}
             />
 
             </div>

@@ -1,3 +1,4 @@
+import Images from "../generalComponents/Images"
 
 function Error() {
   return (
@@ -7,7 +8,10 @@ function Error() {
 
         <p className="warning faculty-glyphic-regular">Usted ha ingresado a una página que no existe</p>
 
-        <img src="" alt="" />
+        <Images
+        src=""
+        alt=""
+        className="" />
 
 
    </>

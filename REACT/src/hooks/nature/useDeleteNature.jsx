@@ -17,19 +17,20 @@ function useDeleteNature() {
 
       if (!response.ok) {
         throw new Error(
-          "Error al traer el elemento de Naturaleza",
+          "Error al eliminar el elemento de Naturaleza",
           response.status,
         );
       }
 
       const data = await response.json();
+
+      return data
+
     } catch (error) {
       console.error(error);
       setError(error);
-      return null;
     }
   };
-
   return { error, deleteNature };
 }
 
