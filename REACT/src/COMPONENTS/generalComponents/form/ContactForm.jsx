@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../cards/Button";
 import Input from "./Input";
 import Select from "./Select";
 import Textarea from "./Textarea";
@@ -9,9 +9,17 @@ function ContactForm() {
       <form action="#" method="get">
 
         <Input
-          inputText="Nombre y Apellido"
-          name="Nombre y Apellido"
-          id="Nombre y Apellido"
+          inputText="Nombre"
+          name="Nombre"
+          id="Nombre"
+          type="text"
+          placeholder="Escriba aquí"
+        />
+
+        <Input
+          inputText="Apellido"
+          name="Apellido"
+          id="Apellido"
           type="text"
           placeholder="Escriba aquí"
         />

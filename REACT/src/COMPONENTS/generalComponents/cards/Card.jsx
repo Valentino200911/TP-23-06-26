@@ -1,4 +1,5 @@
 import Button from "./Button"
+import Images from "../galleries/Images"
 
 function Card({cardTitle, src, alt, cardText, href}) {
   return (
@@ -6,7 +7,11 @@ function Card({cardTitle, src, alt, cardText, href}) {
       <div className="card">
         <h3 className="domine-bold cardTitle">{cardTitle} </h3>
 
-        <img src={src} alt={cardTitle} className="cardImage" />
+        <Images
+        src={src}
+        alt={alt}
+        className="cardImage"
+        />
 
         <p className="cardText">{cardText}</p>
 

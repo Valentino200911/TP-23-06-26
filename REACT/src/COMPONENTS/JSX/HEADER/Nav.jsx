@@ -7,7 +7,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import RouteNavList from './RouteNavList'
 import Logo from './Logo'
-import Button from '../../generalComponents/Button'
+import Button from '../../generalComponents/cards/Button'
 import useAuth from '../../../hooks/user/useAuth'
 
 //Por cuestiones de estilo, preferí no dejar un mensaje de "Bienvenidos tras el login"
@@ -29,6 +29,7 @@ function Nav() {
   const handleLogoutUser = () => {
     alert("Sesión cerrada")
     logout()
+    navigate("/")
     window.location.reload()
   }
 

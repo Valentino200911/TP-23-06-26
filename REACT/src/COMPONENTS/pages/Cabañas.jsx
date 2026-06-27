@@ -1,5 +1,5 @@
-import FirstGallery from "../generalComponents/FirstGallery";
-import SecondGallery from "../generalComponents/SecondGallery";
+import FirstGallery from "../generalComponents/galleries/FirstGallery";
+import SecondGallery from "../generalComponents/galleries/SecondGallery";
 
 function Cabañas() {
   return (

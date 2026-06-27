@@ -3,7 +3,7 @@ import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
 import Input from "./Input";
 import SelectorInput from "./SelectorInput";
 import Textarea from "./Textarea";
-import Button from "../Button";
+import Button from "../cards/Button";
 
 function ReservationForm() {
   return (
@@ -11,9 +11,17 @@ function ReservationForm() {
       <form action="#" method="get" >
 
         <Input
-          inputText="Nombre y Apellido"
-          name="Nombre y Apellido"
-          id="Nombre y Apellido"
+          inputText="Nombre"
+          name="Nombre"
+          id="Nombre"
+          type="text"
+          placeholder="Escriba aquí"
+        />
+
+        <Input
+          inputText="Apellido"
+          name="Apellido"
+          id="Apellido"
           type="text"
           placeholder="Escriba aquí"
         />

@@ -1,11 +1,11 @@
 import Input from "../generalComponents/form/Input";
 import usePostNature from "../../hooks/nature/usePostNature";
 import Textarea from "../generalComponents/form/Textarea";
-import Button from "../generalComponents/Button";
+import Button from '../../components/generalComponents/cards/Button'
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Images from "../generalComponents/Images";
-import NatureCard from "../generalComponents/NatureCard"
+import Images from "../generalComponents/galleries/Images";
+import NatureCard from "../generalComponents/cards/NatureCard"
 
 //Sería el equivalente a un CreateProductPage.jsx
 //Consideré que sería mejor tener el formulario controlado con inputs componetizados aquí en vez de en generalComponents/form

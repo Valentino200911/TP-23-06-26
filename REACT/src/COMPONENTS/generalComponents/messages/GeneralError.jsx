@@ -1,8 +1,8 @@
-import useIndexNature from "../../hooks/nature/useGetNature"
+import useGetNature from "../../../hooks/nature/useGetNature"
 
 function GeneralError() {
 
-  const {error, loading, product} = useIndexNature()
+  const {error, loading, product} = useGetNature()
 
   return (
     <>

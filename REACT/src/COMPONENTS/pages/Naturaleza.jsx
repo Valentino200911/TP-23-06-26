@@ -2,15 +2,17 @@
 
 import { useNavigate } from "react-router-dom";
 import useGetNature from "../../hooks/nature/useGetNature";
-import Button from "../generalComponents/Button";
-import GeneralError from "../generalComponents/GeneralError";
-import GeneralLoading from "../generalComponents/GeneralLoading";
-import NatureCard from "../generalComponents/NatureCard";
+import Button from '../generalComponents/cards/Button'
+import GeneralError from "../generalComponents/messages/GeneralError";
+import GeneralLoading from "../generalComponents/messages/GeneralLoading";
+import NatureCard from "../generalComponents/cards/NatureCard"
 import useDeleteNature from "../../hooks/nature/useDeleteNature";
+import useAuth from "../../hooks/user/useAuth";
 
 function Naturaleza() {
   const { error, loading, bioelements } = useGetNature();
   const { error: deleteError, deleteNature } = useDeleteNature();
+  const {user, isAuthenticated} = useAuth()
 
   const navigate = useNavigate();
 
@@ -43,6 +45,7 @@ function Naturaleza() {
       }
       return;
     }
+    //Es distinto el return con if(error) que con if(deleteError)
     if (deleteError) {
       return (
         <>
@@ -72,6 +75,8 @@ function Naturaleza() {
 
   return (
     <>
+    {isAuthenticated && (
+
       <div className="buttonContainer">
         <Button
           type="#"
@@ -81,6 +86,8 @@ function Naturaleza() {
           buttonText="Indexar nuevo elemento"
         />
       </div>
+
+    )}
 
       <div className="cardContainer">
         {bioelements.map((bioelement) => (

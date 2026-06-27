@@ -79,5 +79,18 @@
       "password": "123",
       "id": "NYNak1g"
     }
-  ]
+  ],
+    "reservation": [
+    {
+      "id": "1",
+      "name": "",
+      "surname": "",
+      "email": "",
+      "phoneNumber": "",   
+      "cabaña": "",
+      "a": "",
+      "v": "",    
+      "passangerNumber": ""
+    }
+  ],
 }

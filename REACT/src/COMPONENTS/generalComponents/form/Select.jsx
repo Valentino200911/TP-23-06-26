@@ -1,5 +1,6 @@
+import Option from "./Option";
+
 function Select() {
-    //Componetizar option
 
   return (
     <>
@@ -15,25 +16,41 @@ function Select() {
 
           <label for="reason">Motivo de Contacto</label>
 
-          <option value="#" disabled selected className="faculty-glyphic-regular">
-            Seleccione una de estas opciones
-          </option>
+          <Option 
+          value="#"
+          optionText="Seleccione una de las siguientes opciones"
+          isDisabled={true}
+          isSelected={true}
+          />
 
-          <option value="buisness" className="faculty-glyphic-regular">
-            Razones Comerciales
-          </option>
+          <Option 
+          value="buisness"
+          optionText="Razones comerciales"
+          isDisabled={false}
+          isSelected={false}
+          />
 
-          <option value="prom" className="faculty-glyphic-regular">
-            Promoción
-          </option>
+          <Option 
+          value="prom"
+          optionText="Promoción"
+          isDisabled={false}
+          isSelected={false}
+          />
 
-          <option value="problem" className="faculty-glyphic-regular">
-            Problemáticas
-          </option>
+          <Option 
+          value="problem"
+          optionText="Problemáticas"
+          isDisabled={false}
+          isSelected={false}
+          />
 
-          <option value="suggest" className="faculty-glyphic-regular">
-            Sugerencias
-          </option>
+          <Option 
+          value="suggest"
+          optionText="Sugerencia"
+          isDisabled={false}
+          isSelected={false}
+          />
+
         </select>
       </div>
     </>

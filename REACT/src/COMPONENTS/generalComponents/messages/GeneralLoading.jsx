@@ -1,4 +1,4 @@
-import Images from "./Images"
+import Images from "../galleries/Images"
 
 function GeneralLoading() {
   return (

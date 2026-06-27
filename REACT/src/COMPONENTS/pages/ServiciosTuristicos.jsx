@@ -1,4 +1,4 @@
-import Card from "../generalComponents/Card";
+import Card from "../generalComponents/cards/Card"
 
 function ServiciosTuristicos() {
   return (

@@ -1,8 +1,11 @@
 import { useNavigate } from "react-router-dom"
 import Button from "./Button"
-import Images from "./Images"
+import Images from "../galleries/Images"
+import useAuth from "../../../hooks/user/useAuth"
 
 function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, src, href, onClickEdit, onClickDelete}) {
+
+  const {user, isAuthenticated} = useAuth()
 
   return (
           <>
@@ -20,13 +23,18 @@ function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, s
 
             <div className="buttonNatureContainer">
 
-            <Button
-            type="#"
-            id="edit"
-            buttonText="Editar"
-            className="faculty-glyphic-regular"
-            onClick={onClickEdit}
-            />
+            {isAuthenticated && (
+
+              <Button
+              type="#"
+              id="edit"
+              buttonText="Editar"
+              className="faculty-glyphic-regular"
+              onClick={onClickEdit}
+              />
+
+            )}
+
 
             <a href={href} target="_blank">
 
@@ -39,13 +47,18 @@ function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, s
 
             </a>
 
-            <Button
-            type="#"
-            id="delete"
-            buttonText="Borrar"
-            className="faculty-glyphic-regular"
-            onClick={onClickDelete}
-            />
+            {isAuthenticated && (
+
+              <Button
+              type="#"
+              id="delete"
+              buttonText="Borrar"
+              className="faculty-glyphic-regular"
+              onClick={onClickDelete}
+              />
+
+            )}
+
 
             </div>
 
