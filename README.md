@@ -1,5 +1,9 @@
 # Proyecto con React: Cabañas Aguaribay
 
+## ACLARACIÓN IMPORTANTES
+
+En la carpeta "server", así como en los hooks de CRUD de Naturaleza, "products" (ver db.json y use--Method--Nature) fue renombrado como "naturalElements"
+
 ## 1. La Idea del Proyecto
 
 Éste es un proyecto realizado en REACT con Vite que sirve como integración y práctica para los conceptos de HTML, CSS y JS vistos durante la cursada.

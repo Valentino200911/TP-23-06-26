@@ -11,6 +11,7 @@ function ReservationForm() {
       <form action="#" method="get" >
 
         <Input
+          inputText="Nombre y Apellido"
           name="Nombre y Apellido"
           id="Nombre y Apellido"
           type="text"
@@ -18,6 +19,7 @@ function ReservationForm() {
         />
 
         <Input
+          inputText="E-mail"
           name="E-mail"
           id="E-mail"
           type="email"
@@ -25,13 +27,14 @@ function ReservationForm() {
         />
 
         <Input
+          inputText="Número Telefónico"
           name="Número Telefónico"
           id="Número Telefónico"
           type="number"
           placeholder="+54 9 123 4567890"
         />
 
-        <h4 className="faculty-glyphic-regular">Cabaña:</h4>
+        <h4 className="faculty-glyphic-regular">Cabaña</h4>
 
         <div className="selectorContainer textSelector">
 
@@ -41,11 +44,19 @@ function ReservationForm() {
           
         </div>
 
-        <Input name="Fecha de Ingreso" id="Fecha de Ingreso" type="date" />
+        <Input
+        inputText="Fecha de Ingreso" 
+        name="Fecha de Ingreso" 
+        id="Fecha de Ingreso" 
+        type="date" />
 
-        <Input name="Fecha de Egreso" id="Fecha de Egreso" type="date" />
+        <Input 
+        inputText="Fecha de Egreso"
+        name="Fecha de Egreso" 
+        id="Fecha de Egreso" 
+        type="date" />
 
-        <h4 className="faculty-glyphic-regular">Número de Pasajeros:</h4>
+        <h4 className="faculty-glyphic-regular">Número de Pasajeros</h4>
 
         <p class="warning">
           

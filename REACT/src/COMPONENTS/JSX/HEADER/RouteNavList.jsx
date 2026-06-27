@@ -13,7 +13,8 @@ function RouteNavList({i, navText, route}) {
     <li>
 
 
-       <NavLink to={route} className='domine-bold'>
+       <NavLink to={route} 
+       className='domine-bold'>
         
        <FontAwesomeIcon icon={i}/>
         

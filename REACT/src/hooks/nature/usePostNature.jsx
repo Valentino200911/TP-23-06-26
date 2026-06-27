@@ -8,7 +8,7 @@ function usePostNature() {
     setError(null);
 
     try {
-      const response = await fetch(`${API_URL}products`, {
+      const response = await fetch(`${API_URL}naturalElements`, {
         method: "POST",
         headers: {
           "Content-type": "Application/json",
@@ -18,8 +18,8 @@ function usePostNature() {
 
       if (!response.ok) {
         throw new Error(
-          "Error al enviar los registros desde el Índice",
-          response.status,
+          `Error al enviar los registros desde el Índice,
+          ${response.status}`,
         );
       }
 

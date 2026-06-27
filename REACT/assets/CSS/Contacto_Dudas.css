@@ -98,7 +98,8 @@ div.selectorContainer {
     margin: 1rem auto;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
+    padding: 0.5rem 0 0 0;
 
 
 }

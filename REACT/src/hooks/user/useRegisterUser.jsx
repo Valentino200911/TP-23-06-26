@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { API_URL } from "../../config";
 
-function usePatchNature() {
+function useRegisterUser() {
   const [error, setError] = useState(null);
 
-  const patchNature = async (formData, bioelementId) => {
-    try {
-      setError(null);
+  const registerUser = async (formData) => {
+    setError(null);
 
-      const response = await fetch(`${API_URL}naturalElements/${bioelementId}`, {
-        method: "PATCH",
+    try {
+      const response = await fetch(`${API_URL}user`, {
+        method: "POST",
         headers: {
           "Content-type": "Application/json",
         },
@@ -18,20 +18,23 @@ function usePatchNature() {
 
       if (!response.ok) {
         throw new Error(
-         `Error al traer el elemento de Naturaleza,
+          `Error al registrar al usuario, por favor intente de nuevo,
           ${response.status}`,
         );
       }
 
       const data = await response.json();
+
+      const { password: _, ...userWithoutPassword } = data;
+
+      return userWithoutPassword;
     } catch (error) {
-      console.error(error);
+      console.error("Error al registrar usuario");
       setError(error);
       return null;
     }
   };
-
-  return { error, patchNature };
+  return { error, registerUser };
 }
 
-export default usePatchNature;
+export default useRegisterUser;

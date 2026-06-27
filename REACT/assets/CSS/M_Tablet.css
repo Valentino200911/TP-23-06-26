@@ -54,6 +54,13 @@
     padding: 0 !important;
 }
 
+        .embedMap {
+        display: block;
+        border-radius: 5%;
+        height: 60vh;
+        width: 90vw;
+        margin: 0 auto 1rem auto;
+    }
 
     /* CONTACTO */
 

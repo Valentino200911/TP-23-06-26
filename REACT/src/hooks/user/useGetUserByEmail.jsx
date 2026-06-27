@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { API_URL } from "../../config";
 
-function useGetNatureById() {
+function useGetUserByEmail() {
   const [error, setError] = useState(null);
 
-  const getNatureById = async (bioelementId) => {
+  const getUserByEmail = async (userEmail) => {
     try {
       setError(null);
 
-      const response = await fetch(`${API_URL}naturalElements/${bioelementId}`);
+      const response = await fetch(`${API_URL}naturalElements/${userEmail}`);
 
       if (!response.ok) {
         throw new Error(
@@ -26,7 +26,7 @@ function useGetNatureById() {
     }
   };
 
-  return { error, getNatureById };
+  return { error, getUserByEmail };
 }
 
-export default useGetNatureById;
+export default useGetUserByEmail;

@@ -8,6 +8,7 @@ import NatureCard from "../generalComponents/NatureCard";
 import usePostNature from "../../hooks/nature/usePostNature";
 import useGetNatureById from "../../hooks/nature/useGetNatureById";
 import usePatchNature from "../../hooks/nature/usePatchNature";
+import usegetUserById from "../../hooks/user/useGetUserByEmail";
 
 //Sería el equivalente a un EditProductPage.jsx
 //Consideré que sería mejor tener el formulario controlado con inputs componetizados aquí en vez de en generalComponents/form
@@ -53,8 +54,6 @@ function Editor() {
 
   }, [id]);
 
-
-  
   const handleInputChange = (event) => {
     const { id, value, type } = event.target;
     
@@ -70,7 +69,7 @@ function Editor() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     
-    const success = patchNature(form, id);
+    const success = getUserById(form, id);
     
     if (success) {
       setForm({
@@ -94,6 +93,7 @@ function Editor() {
 
       <form onSubmit={handleFormSubmit}>
         <Input
+          inputText="Nombre del Elemento"
           type="text"
           name="Nombre del Elemento"
           id="name"
@@ -103,6 +103,7 @@ function Editor() {
         />
 
         <Input
+          inputText="Nombre Binomial del elemento"
           type="text"
           name="Nombre Binomial del elemento"
           id="binomialName"
@@ -122,6 +123,7 @@ function Editor() {
         <Input
           type="text"
           name="URL e Imagen del elemento"
+          inputText="URL e Imagen del elemento"
           id="image"
           value={form.image}
           placeholder="Escriba aquí la URL de la imagen del elemento"
@@ -140,6 +142,7 @@ function Editor() {
 
         <Input
           type="text"
+          inputText="URL y Más información sobre el elemento"
           name="URL y Más información sobre el elemento"
           id="info"
           value={form.info}
@@ -176,7 +179,7 @@ function Editor() {
 
         {error && (
           <h3 className="faculty-glyphic-regular warning">
-            {error.message || error}
+            {error?.message || error}
           </h3>
         )}
       </form>

@@ -8,24 +8,26 @@ function useDeleteNature() {
     try {
       setError(null);
 
-      const response = await fetch(`${API_URL}products/${bioelementId}`, {
-        method: "DELETE",
-        headers: {
-          "Content-type": "Application/json",
+      const response = await fetch(
+        `${API_URL}naturalElements/${bioelementId}`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-type": "Application/json",
+          },
         },
-      });
+      );
 
       if (!response.ok) {
         throw new Error(
-          "Error al eliminar el elemento de Naturaleza",
-          response.status,
+          `Error al eliminar el elemento de Naturaleza,
+          ${response.status}`,
         );
       }
 
       const data = await response.json();
 
-      return data
-
+      return data;
     } catch (error) {
       console.error(error);
       setError(error);

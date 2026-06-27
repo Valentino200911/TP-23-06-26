@@ -65,7 +65,7 @@ ul.navList {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 2.5rem 0 0 0;
+    padding: 0.5rem 0 0 0;
 }
 
 nav ul li a {

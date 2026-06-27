@@ -1,9 +1,9 @@
 
-function Input({name, id, type, value, placeholder, onChange}) {
+function Input({name, inputText, id, type, value, placeholder, onChange}) {
   return (
     <>
 
-    <label htmlFor={name} className="faculty-glyphic-regular">{name}</label>
+    <label htmlFor={name} className="faculty-glyphic-regular">{inputText}</label>
     
     <input  
     type={type} 

@@ -9,6 +9,7 @@ function ContactForm() {
       <form action="#" method="get">
 
         <Input
+          inputText="Nombre y Apellido"
           name="Nombre y Apellido"
           id="Nombre y Apellido"
           type="text"
@@ -16,6 +17,7 @@ function ContactForm() {
         />
 
         <Input
+          inputText="E-mail"
           name="E-mail"
           id="E-mail"
           type="email"
@@ -23,6 +25,7 @@ function ContactForm() {
         />
 
         <Input
+          inputText="Número Telefónico"
           name="Número Telefónico"
           id="Número Telefónico"
           type="number"

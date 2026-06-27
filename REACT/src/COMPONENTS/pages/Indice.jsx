@@ -62,6 +62,7 @@ function Indice() {
       <form onSubmit={handleFormSubmit}>
         <Input
           type="text"
+          inputText="Nombre del Elemento"
           name="Nombre del Elemento"
           id="name"
           value={form.name}
@@ -71,6 +72,7 @@ function Indice() {
 
         <Input
           type="text"
+          inputText="Nombre Binomial del elemento"
           name="Nombre Binomial del elemento"
           id="binomialName"
           value={form.binomialName}
@@ -88,6 +90,7 @@ function Indice() {
 
         <Input
           type="text"
+          inputText="URL e Imagen del elemento"
           name="URL e Imagen del elemento"
           id="image"
           value={form.image}
@@ -113,6 +116,7 @@ function Indice() {
 
 
         <Input
+          inputText="URL y Más información sobre el elemento"
           type="text"
           name="URL y Más información sobre el elemento"
           id="info"
@@ -162,7 +166,7 @@ function Indice() {
 
           {error && (
             <h3 className="faculty-glyphic-regular warning">
-              {error.message || error}
+              {error?.message || error}
             </h3>
           )}
 
