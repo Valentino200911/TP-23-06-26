@@ -7,7 +7,9 @@ function Textarea({id, label, placeholder, value, onChange}) {
 
     <label htmlFor={id} className="faculty-glyphic-regular">{label}</label>
 
-    <textarea id={id} 
+    <textarea 
+    name={id}
+    id={id} 
     placeholder={placeholder} 
     value={value} 
     className="faculty-glyphic-regular"

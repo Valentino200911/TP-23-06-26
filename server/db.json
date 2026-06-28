@@ -37,60 +37,10 @@
       "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
     }
   ],
-  "type": [
-    {
-      "id": "65f8d0c2e391b1a0d83cf120",
-      "name": "plant"
-    }
-  ],
-  "user": [
-    {
-      "id": "GSasaeA",
-      "name": "Juan",
-      "surnaname": "Perez",
-      "email": "jperez@gmail.com",
-      "password": "ABC123"
-    },
-    {
-      "name": "José",
-      "surname": "Gómez",
-      "email": "joseg@gmail.com",
-      "password": "ABCD4567",
-      "id": "srCDLoG"
-    },
-    {
-      "name": "Pedro",
-      "surname": "Juarez",
-      "email": "pedroj@gmail.com",
-      "password": "987654321",
-      "id": "TUGEd_a"
-    },
-    {
-      "name": "Tulio",
-      "surname": "Horno",
-      "email": "tulioh@gmail.com",
-      "password": "dehug49yu7h54rpñ",
-      "id": "HaPeIQ3"
-    },
-    {
-      "name": "Pepito",
-      "surname": "Gómez",
-      "email": "pgomez@gmail.com",
-      "password": "123",
-      "id": "NYNak1g"
-    }
-  ],
-    "reservation": [
-    {
-      "id": "1",
-      "name": "",
-      "surname": "",
-      "email": "",
-      "phoneNumber": "",   
-      "cabaña": "",
-      "a": "",
-      "v": "",    
-      "passangerNumber": ""
-    }
-  ],
+
+  "user": [],
+
+  "reservation": [],
+
+  "contact": []
 }

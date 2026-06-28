@@ -14,7 +14,7 @@ El proyecto consta de dos partes: la "Maquetación", expresada en las carpetas "
 
 ### La Maquetación
 
-La Maquetación, como ya se mencionó, se da un proyecto realizado en REACT con Vite que consta, además de archivos CSS para los estilos particulares de cada elemento, componente o página del sitio... 
+La Maquetación, como ya se mencionó, se da un proyecto realizado en REACT con Vite que consta tanto de páginas, como componentes, además de archivos CSS importados en un CSS General que actúa para todo del sitio. 
 
 Cada clase en CSS, nombrado en estilo camelCase, se encuentra registrado en cada uno de los archivos .css correspondientes a la página.
 
@@ -43,56 +43,57 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   
 ├   ├ src
 ├   ├   ├ components/
-├   ├   ├    ├      ├generalComponents/ 
-├   ├   ├    ├      ├   ├cards/
-├   ├   ├    ├      ├   ├   ├Button.jsx
-├   ├   ├    ├      ├   ├   ├Card.jsx
-├   ├   ├    ├      ├   ├   ├NatureCard.jsx
-├   ├   ├    ├      ├   ├   
-├   ├   ├    ├      ├   ├form/
-├   ├   ├    ├      ├   ├   ├ContactForm.jsx
-├   ├   ├    ├      ├   ├   ├Input.jsx
-├   ├   ├    ├      ├   ├   ├Option.jsx
-├   ├   ├    ├      ├   ├   ├ReservationForm.jsx
-├   ├   ├    ├      ├   ├   ├Select.jsx
-├   ├   ├    ├      ├   ├   ├SelectorInput.jsx
-├   ├   ├    ├      ├   ├   ├Textarea.jsx
-├   ├   ├    ├      ├   ├   
-├   ├   ├    ├      ├   ├galleries/
-├   ├   ├    ├      ├   ├   ├FirstGallery.jsx
-├   ├   ├    ├      ├   ├   ├Images.jsx
-├   ├   ├    ├      ├   ├   ├SecondGallery.jsx
-├   ├   ├    ├      ├   ├   
-├   ├   ├    ├      ├   ├messages/
-├   ├   ├    ├      ├   ├   ├GeneralError.jsx
-├   ├   ├    ├      ├   ├   ├GeneralLoading.jsx
-├   ├   ├    ├      ├   ├   
-├   ├   ├    ├      ├   
-├   ├   ├    ├      ├jsx/
-├   ├   ├    ├      ├   ├footer/
-├   ├   ├    ├      ├   ├   ├Button.jsx
-├   ├   ├    ├      ├   ├   ├Card.jsx
-├   ├   ├    ├      ├   ├   ├NatureCard.jsx
-├   ├   ├    ├      ├   ├   
-├   ├   ├    ├      ├   ├header/
-├   ├   ├    ├      ├   ├   ├ContactForm.jsx
-├   ├   ├    ├      ├   ├   ├Input.jsx
-├   ├   ├    ├      ├   ├   ├Option.jsx
-├   ├   ├    ├      ├   ├   ├ReservationForm.jsx
-├   ├   ├    ├      ├   ├   ├Select.jsx
-├   ├   ├    ├      ├   ├   ├SelectorInput.jsx
-├   ├   ├    ├      ├   ├   ├Textarea.jsx
-├   ├   ├    ├      ├   ├   
-├   ├   ├    ├      ├layout/
-├   ├   ├    ├      ├pages/
-├   ├   ├    ├      
-├   ├   ├    ├  
-├   ├   ├    ├ user/
-├   ├   ├    ├      ├useAuth.jsx 
-├   ├   ├    ├      ├useGetNatureByEmail.jsx #Aplicar funcionalidad en l.58
-├   ├   ├    ├      ├useLoginUser.jsx 
-├   ├   ├    ├      ├useRegisterUser.jsx 
-├   ├   ├    
+├   ├   ├          ├generalComponents/ 
+├   ├   ├          ├   ├cards/
+├   ├   ├          ├   ├   ├Button.jsx
+├   ├   ├          ├   ├   ├Card.jsx
+├   ├   ├          ├   ├   ├NatureCard.jsx
+├   ├   ├          ├   ├   
+├   ├   ├          ├   ├form/
+├   ├   ├          ├   ├   ├ContactForm.jsx
+├   ├   ├          ├   ├   ├Input.jsx
+├   ├   ├          ├   ├   ├Option.jsx
+├   ├   ├          ├   ├   ├ReservationForm.jsx
+├   ├   ├          ├   ├   ├Select.jsx
+├   ├   ├          ├   ├   ├SelectorInput.jsx
+├   ├   ├          ├   ├   ├Textarea.jsx
+├   ├   ├          ├   ├   
+├   ├   ├          ├   ├galleries/
+├   ├   ├          ├   ├   ├FirstGallery.jsx
+├   ├   ├          ├   ├   ├Images.jsx
+├   ├   ├          ├   ├   ├SecondGallery.jsx
+├   ├   ├          ├   ├   
+├   ├   ├          ├   ├messages/
+├   ├   ├          ├      ├GeneralError.jsx
+├   ├   ├          ├      ├GeneralLoading.jsx
+├   ├   ├          ├      
+├   ├   ├          ├   
+├   ├   ├          ├jsx/
+├   ├   ├          ├   ├footer/
+├   ├   ├          ├   ├   ├Footer.jsx
+├   ├   ├          ├   ├   ├MediaList.jsx
+├   ├   ├          ├   ├   
+├   ├   ├          ├   ├header/
+├   ├   ├          ├      ├Header.jsx
+├   ├   ├          ├      ├Logo.jsx
+├   ├   ├          ├      ├Nav.jsx
+├   ├   ├          ├      ├RouteNavList.jsx
+├   ├   ├          ├     
+├   ├   ├          ├layout/
+├   ├   ├          ├   ├Layout.jsx
+├   ├   ├          ├   
+├   ├   ├          ├pages/
+├   ├   ├             ├Cabañas.jsx
+├   ├   ├             ├Contacto.jsx
+├   ├   ├             ├Editor.jsx
+├   ├   ├             ├Error.jsx
+├   ├   ├             ├Home.jsx
+├   ├   ├             ├Indice.jsx
+├   ├   ├             ├Login.jsx
+├   ├   ├             ├Naturaleza.jsx
+├   ├   ├             ├Register.jsx
+├   ├   ├             ├ServiciosTurísticos.jsx
+├   ├   ├  
 ├   ├   ├ hooks/
 ├   ├   ├    ├ nature/
 ├   ├   ├    ├      ├useDeleteNature.jsx 
@@ -106,7 +107,13 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   ├    ├      ├useGetNatureByEmail.jsx #Aplicar funcionalidad en L.57
 ├   ├   ├    ├      ├useLoginUser.jsx 
 ├   ├   ├    ├      ├useRegisterUser.jsx 
-├   ├   ├    
+├   ├   ├    ├
+├   ├   ├    ├ contact/
+├   ├   ├    ├      ├useContact.jsx 
+├   ├   ├    ├
+├   ├   ├    ├ reservation/
+├   ├   ├         ├useReservation.jsx 
+├   ├   ├         
 ├   ├   ├ App.jsx
 ├   ├   ├ config.js
 ├   ├   ├ index.css    # Archivo .css general para las páginas
@@ -137,6 +144,11 @@ PROYECTO/               # CARPETA RAÍZ
 
 ---
 
+#### Funcionalidades del Proyecto
 
+Entre las funcionalidades del proyecto se encuentran:
 
-
+* El control de la totalidad de los formularios del proyecto.
+* La comunicación correcta entre la API Local y el Frontend.
+* Registración, Inicio y Cierre de Sesión de Usuario.
+* Funcionalidades específicas de usuarios (renderizado condicional).

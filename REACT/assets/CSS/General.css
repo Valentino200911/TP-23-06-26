@@ -1,17 +1,17 @@
 @import url(Cabañas.css);
 
-@import url(Contacto_Dudas.css);
+@import url(Contacto.css);
 
-@import url(Pagina_Principal.css);
+@import url(Home.css);
 
-@import url(Servicios_Turisticos_Ubicación.css);
+@import url(ServiciosTuristicos.css);
 
-@import url(M_Mobile.css);
+@import url(MobileMediaQuery.css);
 
-@import url(M_Tablet.css);
+@import url(TabletMediaQuery.css);
 
 @import url(Naturaleza.css);
 
 @import url(Indice.css);
 
-@import url(registerAndLogin.css);
+@import url(RegisterAndLogin.css);

@@ -1,6 +1,6 @@
 import Option from "./Option";
 
-function Select() {
+function Select({onChange, value}) {
 
   return (
     <>
@@ -24,31 +24,39 @@ function Select() {
           />
 
           <Option 
-          value="buisness"
+          id="buisness"
+          value={value}
           optionText="Razones comerciales"
           isDisabled={false}
           isSelected={false}
+          onChange={onChange}
           />
 
           <Option 
-          value="prom"
+          id="prom"
+          value={value}
           optionText="Promoción"
           isDisabled={false}
           isSelected={false}
+          onChange={onChange}
           />
 
-          <Option 
-          value="problem"
+          <Option
+          id="problem" 
+          value={value}
           optionText="Problemáticas"
           isDisabled={false}
           isSelected={false}
+          onChange={onChange}
           />
 
-          <Option 
-          value="suggest"
+          <Option
+          id="suggest" 
+          value={value}
           optionText="Sugerencia"
           isDisabled={false}
           isSelected={false}
+          onChange={onChange}
           />
 
         </select>

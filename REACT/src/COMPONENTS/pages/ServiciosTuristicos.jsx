@@ -16,7 +16,7 @@ function ServiciosTuristicos() {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            class="embedMap"
+            className="embedMap"
           />
         </div>
       </section>

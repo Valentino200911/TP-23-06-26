@@ -1,51 +1,105 @@
 import Button from "../cards/Button";
-import Input from "./Input";
 import Select from "./Select";
 import Textarea from "./Textarea";
+import useContact from "../../../hooks/contact/useContact";
+import { useState } from "react";
+import Input from "./Input";
 
 function ContactForm() {
+  
+    const [form, setForm] = useState({
+      name: "",
+      surname: "",
+      email: "",
+      phoneNumber: "",  
+      reasonOfContact:"",    
+      comment: ""
+  })
+
+  const {error, contact} = useContact()
+
+  const handleInputChange = (event) => {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value
+
+    })
+  }
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault()
+    const success = await contact(form)
+    console.log(success);
+  
+
+    if (success) {
+      setForm({
+      name: "",
+      surname: "",
+      email: "",
+      phoneNumber: "",
+      reasonOfContact:"",   
+      comment: ""
+      })
+      alert("Contacto realizado")
+      window.location.reload()
+    }
+  }
   return (
     <>
-      <form action="#" method="get">
+      <form action="#" method="get" onSubmit={handleFormSubmit}>
 
         <Input
           inputText="Nombre"
-          name="Nombre"
-          id="Nombre"
+          name="name"
+          id="name"
+          value={form.name}
           type="text"
           placeholder="Escriba aquí"
+          onChange={handleInputChange}
         />
 
         <Input
           inputText="Apellido"
-          name="Apellido"
-          id="Apellido"
+          name="surname"
+          id="surname"
+          value={form.surname}
           type="text"
           placeholder="Escriba aquí"
+          onChange={handleInputChange}
         />
 
         <Input
           inputText="E-mail"
-          name="E-mail"
-          id="E-mail"
+          name="email"
+          id="email"
+          value={form.email}
           type="email"
           placeholder="Escriba aquí"
+          onChange={handleInputChange}
         />
 
         <Input
           inputText="Número Telefónico"
-          name="Número Telefónico"
-          id="Número Telefónico"
+          name="phoneNumber"
+          id="phoneNumber"
+          value={form.phoneNumber}
           type="number"
           placeholder="+54 9 123 4567890"
+          onChange={handleInputChange}
         />
 
-        <Select />
+        <Select
+        onChange={handleInputChange}
+        value={form.reasonOfContact} />
 
         <Textarea
-        id="Comentario"
+        name="comment"
+        id="comment"
+        value={form.comment}
         label="Comentario"
         placeholder="Escriba aquí"
+        onChange={handleInputChange}
         />
 
         <div className="buttonContainer">
@@ -67,5 +121,6 @@ function ContactForm() {
     </>
   );
 }
+
 
 export default ContactForm

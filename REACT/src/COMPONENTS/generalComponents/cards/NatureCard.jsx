@@ -10,7 +10,7 @@ function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, s
   return (
           <>
 
-            <h3 class="domine-bold cardTitleNature">{cardTitleNature}</h3>
+            <h3 className="domine-bold cardTitleNature">{cardTitleNature}</h3>
 
             <h4 className="domine-bold cardSecondTitle">{cardSecondTitle}</h4>
 

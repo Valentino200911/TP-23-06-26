@@ -5,9 +5,9 @@ import ReservationForm from "../generalComponents/form/ReservationForm";
 function Contacto() {
   return (
     <>
-      <section class="contact">
+      <section className="contact">
 
-        <h2 class="faculty-glyphic-regular"> Para reservar por medio de esta página, llene el siguiente formulario:</h2>
+        <h2 className="faculty-glyphic-regular"> Para reservar por medio de esta página, llene el siguiente formulario:</h2>
 
         <ReservationForm/>
 
@@ -17,7 +17,7 @@ function Contacto() {
 
         <section>
 
-        <h2 class="faculty-glyphic-regular"> Para contactarnos por otros motivos, llene el siguiente formulario:</h2>
+        <h2 className="faculty-glyphic-regular"> Para contactarnos por otros motivos, llene el siguiente formulario:</h2>
 
         <ContactForm/>
 
