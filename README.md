@@ -2,7 +2,7 @@
 
 ## 0.⚠️ Aclaración Importante
 
-En la carpeta "server", así como en los hooks de CRUD de Naturaleza, "products" (ver db.json y use--Method--Nature) fue renombrado como "naturalElements"
+En la carpeta "server", así como en los hooks de CRUD de Naturaleza, "products" (ver db.json y use--Method--Nature) fue renombrado como "naturalElements".
 
 ## 1. 💡 La Idea del Proyecto
 
@@ -104,15 +104,15 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   ├    ├  
 ├   ├   ├    ├ user/
 ├   ├   ├    ├      ├useAuth.jsx 
-├   ├   ├    ├      ├useGetNatureByEmail.jsx #Aplicar funcionalidad en L.57
+├   ├   ├    ├      ├useGetNatureByEmail.jsx    #Aplicar funcionalidad en useLoginUser.jsx 
 ├   ├   ├    ├      ├useLoginUser.jsx 
 ├   ├   ├    ├      ├useRegisterUser.jsx 
 ├   ├   ├    ├
 ├   ├   ├    ├ contact/
-├   ├   ├    ├      ├useContact.jsx 
+├   ├   ├    ├      ├useContact.jsx         #Hook que regula el envío de info. hacia la API desde ContactForm.jsx
 ├   ├   ├    ├
 ├   ├   ├    ├ reservation/
-├   ├   ├         ├useReservation.jsx 
+├   ├   ├         ├useReservation.jsx       #Hook que regula el envío de info. hacia la API desde Reservation.jsx
 ├   ├   ├         
 ├   ├   ├ App.jsx
 ├   ├   ├ config.js
@@ -144,7 +144,7 @@ PROYECTO/               # CARPETA RAÍZ
 
 ---
 
-#### Funcionalidades del Proyecto
+### Funcionalidades del Proyecto
 
 Entre las funcionalidades del proyecto se encuentran:
 
@@ -152,3 +152,14 @@ Entre las funcionalidades del proyecto se encuentran:
 * La comunicación correcta entre la API Local y el Frontend.
 * Registración, Inicio y Cierre de Sesión de Usuario.
 * Funcionalidades específicas de usuarios (renderizado condicional).
+
+#### Colecciones del server
+
+Entre las colecciones funcionales que admite el server (db.json), se encuentran:
+
+```
+  http://0.0.0.0:3000/naturalElements
+  http://0.0.0.0:3000/user
+  http://0.0.0.0:3000/reservation
+  http://0.0.0.0:3000/contact
+```

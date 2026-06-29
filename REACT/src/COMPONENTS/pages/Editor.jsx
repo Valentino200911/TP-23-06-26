@@ -8,7 +8,6 @@ import NatureCard from "../generalComponents/cards/NatureCard"
 import usePostNature from "../../hooks/nature/usePostNature";
 import useGetNatureById from "../../hooks/nature/useGetNatureById";
 import usePatchNature from "../../hooks/nature/usePatchNature";
-import usegetUserById from "../../hooks/user/useGetUserByEmail";
 
 //Sería el equivalente a un EditProductPage.jsx
 //Consideré que sería mejor tener el formulario controlado con inputs componetizados aquí en vez de en generalComponents/form
@@ -69,7 +68,7 @@ function Editor() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     
-    const success = getUserById(form, id);
+    const success = patchNature(form, id);
     
     if (success) {
       setForm({

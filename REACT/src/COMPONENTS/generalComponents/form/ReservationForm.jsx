@@ -140,8 +140,7 @@ function ReservationForm() {
         <p className="warning faculty-glyphic-regular">
           
           <FontAwesomeIcon
-            className="fa-solid faTriangleExclamation warning"
-            style="color: #b70d0d; background-color: rgb(21, 116, 209) ;"/>
+            icon={faTriangleExclamation}/>
           
 
           Verifique la Capacidad Máxima de cada Cabaña en el Apartado "Cabañas"

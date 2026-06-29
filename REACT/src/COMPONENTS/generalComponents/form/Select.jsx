@@ -1,6 +1,6 @@
 import Option from "./Option";
 
-function Select({onChange, value}) {
+function Select({name, id, onChange, value}) {
 
   return (
     <>
@@ -9,10 +9,13 @@ function Select({onChange, value}) {
         <h4 className="faculty-glyphic-regular">Motivo de Contacto</h4>
         
         <select
-          name="reason"
-          id="reason"
+          name={name}
+          id={id}
           required
+          onChange={onChange}
+          value={value}
           className="faculty-glyphic-regular">
+          
 
           <label for="reason">Motivo de Contacto</label>
 
@@ -24,39 +27,39 @@ function Select({onChange, value}) {
           />
 
           <Option 
+          name="buisness"
           id="buisness"
-          value={value}
+          value="buisness"
           optionText="Razones comerciales"
           isDisabled={false}
           isSelected={false}
-          onChange={onChange}
           />
 
           <Option 
+          name="prom"
           id="prom"
-          value={value}
+          value="prom"
           optionText="Promoción"
           isDisabled={false}
           isSelected={false}
-          onChange={onChange}
           />
 
           <Option
+          name="problem"
           id="problem" 
-          value={value}
+          value="problem"
           optionText="Problemáticas"
           isDisabled={false}
           isSelected={false}
-          onChange={onChange}
           />
 
           <Option
+          name="suggest"
           id="suggest" 
-          value={value}
+          value="suggest"
           optionText="Sugerencia"
           isDisabled={false}
           isSelected={false}
-          onChange={onChange}
           />
 
         </select>

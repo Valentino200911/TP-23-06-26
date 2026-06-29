@@ -8,11 +8,11 @@ function useGetUserByEmail() {
     try {
       setError(null);
 
-      const response = await fetch(`${API_URL}naturalElements/${userEmail}`);
+      const response = await fetch(`${API_URL}user/${userEmail}`);
 
       if (!response.ok) {
         throw new Error(
-          `Error al traer el elemento de Naturaleza,
+          `Error al traer al usuario por su email,
           ${response.status}`,
         );
       }

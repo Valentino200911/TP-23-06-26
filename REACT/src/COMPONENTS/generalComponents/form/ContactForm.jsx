@@ -90,6 +90,8 @@ function ContactForm() {
         />
 
         <Select
+        name="reasonOfContact"
+        id="reasonOfContact"
         onChange={handleInputChange}
         value={form.reasonOfContact} />
 

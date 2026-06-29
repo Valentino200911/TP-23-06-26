@@ -11,36 +11,33 @@
     },
     {
       "id": 2,
-      "name": "Tusca",
-      "binomialName": "Vachellia aroma",
-      "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
+      "name": "Churqui",
+      "binomialName": "Vachellia caven",
+      "description": "Árbol perteneciente a las acacias que se ubica principalmente en Argentina, Bolivia y Paraguay.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
-      "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Acacia_caven_2.jpg/960px-Acacia_caven_2.jpg",
+      "info": "https://es.wikipedia.org/wiki/Vachellia_caven"
     },
     {
       "id": 3,
-      "name": "Tusca",
-      "binomialName": "Vachellia aroma",
-      "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
+      "name": "Aguaribay",
+      "binomialName": "Schinus areira",
+      "description": "Árbol de la familia de las anacardiáceas, crece de forma silvestre en el centro y norte de Argentina.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
-      "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
+      "image": "https://acdn-us.mitiendanube.com/stores/003/960/867/products/tn-aguaribay-1-e4dd3c340bd96364a917385957989389-1024-1024.webp",
+      "info": "https://es.wikipedia.org/wiki/Schinus_areira"
     },
     {
       "id": 4,
-      "name": "Tusca",
-      "binomialName": "Vachellia aroma",
-      "description": "Árbol perteneciente a la familia de las acacias que se ubica en el territorio argentino.",
+      "name": "Tipa",
+      "binomialName": "Tipuana tipu,",
+      "description": "Árbol de crecimiento rápido concentrado en Sudamérica que puede llegar a medir hasta 40 m de altura.",
       "type": "65f8d0c2e391b1a0d83cf120",
-      "image": "https://evojuego.wordpress.com/wp-content/uploads/2020/10/tusca.jpg",
-      "info": "https://es.wikipedia.org/wiki/Vachellia_aroma"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAe69opzxmm3-2H6t6jbmnvIuM5GYdo5cZAw&s",
+      "info": "https://buenosaires.gob.ar/gcaba_historico/espaciopublicoehigieneurbana/gestion-comunal/arbopedia/tipa"
     }
   ],
-
   "user": [],
-
   "reservation": [],
-
   "contact": []
 }
