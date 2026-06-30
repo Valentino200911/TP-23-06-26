@@ -30,7 +30,7 @@
     {
       "id": 4,
       "name": "Tipa",
-      "binomialName": "Tipuana tipu,",
+      "binomialName": "Tipuana tipu",
       "description": "Árbol de crecimiento rápido concentrado en Sudamérica que puede llegar a medir hasta 40 m de altura.",
       "type": "65f8d0c2e391b1a0d83cf120",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAe69opzxmm3-2H6t6jbmnvIuM5GYdo5cZAw&s",
@@ -38,6 +38,8 @@
     }
   ],
   "user": [],
+
   "reservation": [],
+  
   "contact": []
 }

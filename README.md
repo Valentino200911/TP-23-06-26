@@ -118,6 +118,7 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   ├ config.js
 ├   ├   ├ index.css    # Archivo .css general para las páginas
 ├   ├   ├ main.jsx
+├   ├   ├ ProtectedRoute.jsx
 ├   ├   ├ router.jsx   # Ruteo de las páginas          
 ├   ├        
 ├   ├ .env             # .env privada, excluida según el .gitignore   

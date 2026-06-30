@@ -10,6 +10,7 @@ import Contacto from './components/pages/Contacto'
 import Editor from './components/pages/Editor'
 import Login from './components/pages/Login'
 import Register from './components/pages/Register'
+import ProtectedRoute from './ProtectedRoute'
 
 export const router = createBrowserRouter([
 
@@ -59,14 +60,22 @@ export const router = createBrowserRouter([
             {
                 path: "/naturaleza/indice",
 
-                element: <Indice />                
+                
+
+                element: <ProtectedRoute>
+                            <Indice /> 
+                         </ProtectedRoute>
+                                   
+                    
 
             },
 
             {
                 path: "/naturaleza/editor/:id",
 
-                element: <Editor />                
+                element: <ProtectedRoute>
+                            <Editor /> 
+                         </ProtectedRoute>               
 
             },
 
