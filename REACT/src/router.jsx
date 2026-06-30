@@ -62,9 +62,9 @@ export const router = createBrowserRouter([
 
                 
 
-                element: <ProtectedRoute>
-                            <Indice /> 
-                         </ProtectedRoute>
+                // element: <ProtectedRoute>
+                     element: <Indice /> 
+                        //  </ProtectedRoute>
                                    
                     
 
@@ -73,9 +73,9 @@ export const router = createBrowserRouter([
             {
                 path: "/naturaleza/editor/:id",
 
-                element: <ProtectedRoute>
-                            <Editor /> 
-                         </ProtectedRoute>               
+                // element: <ProtectedRoute>
+                element:  <Editor /> 
+                        //  </ProtectedRoute>               
 
             },
 

@@ -109,16 +109,16 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   ├    ├      ├useRegisterUser.jsx 
 ├   ├   ├    ├
 ├   ├   ├    ├ contact/
-├   ├   ├    ├      ├useContact.jsx         #Hook que regula el envío de info. hacia la API desde ContactForm.jsx
+├   ├   ├    ├      ├useContact.jsx #Hook que envía info. hacia la API desde ContactForm.jsx
 ├   ├   ├    ├
 ├   ├   ├    ├ reservation/
-├   ├   ├         ├useReservation.jsx       #Hook que regula el envío de info. hacia la API desde Reservation.jsx
+├   ├   ├         ├useReservation.jsx       #Hook que envía info. hacia la API desde Reservation.jsx
 ├   ├   ├         
 ├   ├   ├ App.jsx
 ├   ├   ├ config.js
 ├   ├   ├ index.css    # Archivo .css general para las páginas
 ├   ├   ├ main.jsx
-├   ├   ├ ProtectedRoute.jsx
+├   ├   ├ ProtectedRoute.jsx #Protección de las rutas - comentado en router.jsx por errores
 ├   ├   ├ router.jsx   # Ruteo de las páginas          
 ├   ├        
 ├   ├ .env             # .env privada, excluida según el .gitignore   

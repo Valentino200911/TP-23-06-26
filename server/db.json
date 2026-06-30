@@ -37,9 +37,22 @@
       "info": "https://buenosaires.gob.ar/gcaba_historico/espaciopublicoehigieneurbana/gestion-comunal/arbopedia/tipa"
     }
   ],
-  "user": [],
-
+  "user": [
+    {
+      "name": "A",
+      "surname": "B",
+      "email": "AB@gmail.com",
+      "password": "1",
+      "id": 1
+    },
+    {
+      "name": "A",
+      "surname": "B",
+      "email": "AB@gmail.com",
+      "password": "1",
+      "id": 2
+    }
+  ],
   "reservation": [],
-  
   "contact": []
 }
