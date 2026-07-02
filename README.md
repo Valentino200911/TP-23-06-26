@@ -6,37 +6,64 @@ En la carpeta "server", así como en los hooks de CRUD de Naturaleza, "products"
 
 ## 1. 💡 La Idea del Proyecto
 
-Éste es un proyecto realizado en REACT con Vite que sirve como integración y práctica para los conceptos de HTML, CSS y JS vistos durante la cursada.
+Sitio web para Cabañas Aguaribay, ubicadas en el Valle del San Javier, Tucumán, Argentina, con alojamiento para apreciar la naturaleza tucumana.
 
-## 2. 🏢 La Estructura del Proyecto
+## 2. 💻 Las Tecnologías Utilizadas
 
-El proyecto consta de dos partes: la "Maquetación", expresada en las carpetas "REACT" y "CSS" (estilos), y la "API", expresada en la carpeta "server"
+Este proyecto utiliza las siguientes tecnologías en su interior:
 
-### La Maquetación
+* React 19 con Vite.
+* React Router DOM v7.
+* FontAwesome (iconos).
+* JSON Server (API simulada).
+* CSS puro con media queries (versiones responsive para celular y tablet).
 
-La Maquetación, como ya se mencionó, se da un proyecto realizado en REACT con Vite que consta tanto de páginas, como componentes, además de archivos CSS importados en un CSS General que actúa para todo del sitio. 
+## 3. 🏢 La Estructura de Carpetas
 
-Cada clase en CSS, nombrado en estilo camelCase, se encuentra registrado en cada uno de los archivos .css correspondientes a la página.
-
-**Ejemplo:**
-
-* Pagina_Principal.css
-* Naturaleza.css
-* Cabañas.css
-
-#### La Estructura de Carpetas
 ```text
 PROYECTO/               # CARPETA RAÍZ
+├               
 ├REACT/                 # Carpeta que contiene la totalidad del proyecto
 ├   ├ assets/            
 ├   ├   ├ CSS/
+├   ├      ├ Cabañas.css
+├   ├      ├ Contacto.css
+├   ├      ├ General.css
+├   ├      ├ Home.css
+├   ├      ├ Indice.css    
+├   ├      ├ MobileMediaQuery.css #Media Query de entre 0px a 767px (Mobile)
+├   ├      ├ Naturaleza.css
+├   ├      ├ RegisterAndLogin.css
+├   ├      ├ ServiciosTuristicos.css
+├   ├      ├ TabletMediaQuery.css #Media Query de entre 768px a 1023px (Tablet)
 ├   ├ 
-├   ├ node_modules/         
+├   ├ node_modules/  
+├   ├       
 ├   ├ public/
 ├   ├   ├ cabaña1/
+├   ├   ├   ├ Cabaña 1.1.jpg
+├   ├   ├   ├ Cabaña 1.2.jpg
+├   ├   ├   ├ Cabaña 1.3.jpg
+├   ├   ├   ├ Cabaña 1.4.jpg
+├   ├   ├
 ├   ├   ├ cabaña2/
+├   ├   ├   ├ Cabaña 2.1.jpg
+├   ├   ├   ├ Cabaña 2.2.jpg
+├   ├   ├   ├ Cabaña 2.3.jpg
+├   ├   ├   ├ Cabaña 2.4.jpg
+├   ├   ├
 ├   ├   ├ cardImages/
+├   ├   ├   ├ BOSQUE DE LA MEMORIA.jpg
+├   ├   ├   ├ CASCADA DEL RÍO NOQUE.jpg
+├   ├   ├   ├ CRISTO BENDICENTE.jpg
+├   ├   ├   ├ SENDERO EL FUNICULAR.jpg
+├   ├   ├
 ├   ├   ├ footerImages/
+├   ├   ├   ├ booking.png
+├   ├   ├   ├ facebook.png
+├   ├   ├   ├ instagram.png
+├   ├   ├   ├ whatsapp.png
+├   ├   ├
 ├   ├   ├ heroSection.png    
 ├   ├   ├ loadingImage.gif
 ├   ├   ├ logo.png
@@ -67,17 +94,15 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   ├          ├      ├GeneralError.jsx
 ├   ├   ├          ├      ├GeneralLoading.jsx
 ├   ├   ├          ├      
+├   ├   ├          ├footer/
+├   ├   ├          ├   ├Footer.jsx
+├   ├   ├          ├   ├MediaList.jsx
 ├   ├   ├          ├   
-├   ├   ├          ├jsx/
-├   ├   ├          ├   ├footer/
-├   ├   ├          ├   ├   ├Footer.jsx
-├   ├   ├          ├   ├   ├MediaList.jsx
-├   ├   ├          ├   ├   
-├   ├   ├          ├   ├header/
-├   ├   ├          ├      ├Header.jsx
-├   ├   ├          ├      ├Logo.jsx
-├   ├   ├          ├      ├Nav.jsx
-├   ├   ├          ├      ├RouteNavList.jsx
+├   ├   ├          ├header/
+├   ├   ├          ├  ├Header.jsx
+├   ├   ├          ├  ├Logo.jsx
+├   ├   ├          ├  ├Nav.jsx
+├   ├   ├          ├  ├RouteNavList.jsx
 ├   ├   ├          ├     
 ├   ├   ├          ├layout/
 ├   ├   ├          ├   ├Layout.jsx
@@ -103,22 +128,22 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   ├    ├      ├usePostNature.jsx 
 ├   ├   ├    ├  
 ├   ├   ├    ├ user/
-├   ├   ├    ├      ├useAuth.jsx 
-├   ├   ├    ├      ├useGetNatureByEmail.jsx    #Aplicar funcionalidad en useLoginUser.jsx 
+├   ├   ├    ├      ├AuthContext.jsx 
+├   ├   ├    ├      ├useGetNatureByEmail.jsx    
 ├   ├   ├    ├      ├useLoginUser.jsx 
 ├   ├   ├    ├      ├useRegisterUser.jsx 
 ├   ├   ├    ├
 ├   ├   ├    ├ contact/
-├   ├   ├    ├      ├useContact.jsx #Hook que envía info. hacia la API desde ContactForm.jsx
+├   ├   ├    ├      ├useContact.jsx      #Hook que envía info. hacia la API Simulada desde ContactForm.jsx
 ├   ├   ├    ├
 ├   ├   ├    ├ reservation/
-├   ├   ├         ├useReservation.jsx       #Hook que envía info. hacia la API desde Reservation.jsx
+├   ├   ├         ├useReservation.jsx    #Hook que envía info. hacia la API Simulada desde Reservation.jsx
 ├   ├   ├         
 ├   ├   ├ App.jsx
 ├   ├   ├ config.js
 ├   ├   ├ index.css    # Archivo .css general para las páginas
 ├   ├   ├ main.jsx
-├   ├   ├ ProtectedRoute.jsx #Protección de las rutas - comentado en router.jsx por errores
+├   ├   ├ ProtectedRoute.jsx 
 ├   ├   ├ router.jsx   # Ruteo de las páginas          
 ├   ├        
 ├   ├ .env             # .env privada, excluida según el .gitignore   
@@ -128,10 +153,9 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├ index.html   
 ├   ├ package-lock.json   
 ├   ├ package.json   
-├   ├ README.md   
 ├   ├ vite.config.js     
 ├
-├ server                # Carpeta de la API local
+├ server                # Carpeta de la API local (Hermana de PROYECTO/REACT)
 ├   ├ node_modules/  
 ├   ├ .gitignore 
 ├   ├ db.json           # Archivo de la API local
@@ -145,22 +169,65 @@ PROYECTO/               # CARPETA RAÍZ
 
 ---
 
-### Funcionalidades del Proyecto
+## 3. ▶️ Inicialización del Proyecto
+
+### Clonar el Repositiorio
+
+```
+git clone https://github.com/Valentino200911/TP-23-06-26.git
+```
+
+### Ir a la Carpeta del Proyecto de REACT
+
+```
+cd TP-23-06-26/REACT
+```
+
+### Instalar las Dependencias
+```
+npm install
+```
+
+### Obtener el archivo .env con la URL de la API Simulada o crearlo usando lo escrito a continuación
+
+```
+VITE_API_URL = "http://localhost:3000/"
+```
+
+### Iniciar el servidor de desarrollo (en TP-23-06-26/REACT)
+
+```
+npm run dev
+```
+
+### Dirigirse a TP-23-06-26/server en la consola e iniciar
+
+```
+npm run dev
+```
+
+## 4. ⚙️ Funcionalidades del Proyecto
 
 Entre las funcionalidades del proyecto se encuentran:
 
-* El control de la totalidad de los formularios del proyecto.
-* La comunicación correcta entre la API Local y el Frontend.
+* Página Principal con Hero Section.
+* Sección de Cabañas con Galería.
+* Servicios Turísticos con mapa embebido.
+* Formulario de contacto.
+* CRUD de elementos de Naturaleza (crear, editar, borrar). 
+* El control de los formularios del proyecto.
+* La comunicación entre la API Simulada y el Frontend.
 * Registración, Inicio y Cierre de Sesión de Usuario.
-* Funcionalidades específicas de usuarios (renderizado condicional).
+* Funcionalidades específicas de usuarios autenticados (renderizado condicional).
 
 #### Colecciones del server
 
 Entre las colecciones funcionales que admite el server (db.json), se encuentran:
 
 ```
-  http://0.0.0.0:3000/naturalElements
-  http://0.0.0.0:3000/user
-  http://0.0.0.0:3000/reservation
-  http://0.0.0.0:3000/contact
+  http://0.0.0.0:3000/naturalElements   #Formularios de Índice, Naturaleza y Editor + NatureCards
+  http://0.0.0.0:3000/user              #Formularios de Login y Register
+  http://0.0.0.0:3000/reservation       #Formulario de Reservación (Contacto.jsx)
+  http://0.0.0.0:3000/contact           #Formulario de Contacto (Contacto.jsx)
 ```
+Las colecciones de user, reservation y contact se encuentran completamente limpias.

@@ -58,26 +58,21 @@ export const router = createBrowserRouter([
             },
 
             {
+            
                 path: "/naturaleza/indice",
-
-                
-
-                // element: <ProtectedRoute>
-                     element: <Indice /> 
-                        //  </ProtectedRoute>
-                                   
-                    
-
+            
+                element: <ProtectedRoute><Indice /></ProtectedRoute>
+            
             },
-
+            
             {
+            
                 path: "/naturaleza/editor/:id",
-
-                // element: <ProtectedRoute>
-                element:  <Editor /> 
-                        //  </ProtectedRoute>               
-
+            
+                element: <ProtectedRoute> <Editor /> </ProtectedRoute>
+            
             },
+
 
             {
                 path: "/user/login",

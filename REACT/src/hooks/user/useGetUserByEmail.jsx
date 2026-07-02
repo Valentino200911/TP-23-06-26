@@ -8,7 +8,7 @@ function useGetUserByEmail() {
     try {
       setError(null);
 
-      const response = await fetch(`${API_URL}user/${userEmail}`);
+      const response = await fetch(`${API_URL}user?email=${userEmail}`);
 
       if (!response.ok) {
         throw new Error(

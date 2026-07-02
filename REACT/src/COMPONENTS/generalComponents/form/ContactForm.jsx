@@ -42,7 +42,6 @@ function ContactForm() {
       comment: ""
       })
       alert("Contacto realizado")
-      window.location.reload()
     }
   }
   return (

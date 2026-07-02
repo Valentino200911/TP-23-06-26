@@ -3,7 +3,7 @@ import Button from '../generalComponents/cards/Button'
 import Input from "../generalComponents/form/Input";
 import useLoginUser from "../../hooks/user/useLoginUser";
 import { useNavigate } from "react-router-dom";
-import useAuth from "../../hooks/user/useAuth";
+import { useAuth } from "../../hooks/user/AuthContext";
 
 function Login() {
 
@@ -28,18 +28,16 @@ function Login() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault()
-    const success = await loginUser(form.email, form.password)
-    console.log(success);
+    const userData = await loginUser(form.email, form.password)
 
-    if (success) {
-      login(form)
+    if (userData) {
+      login(userData)
       alert("Sesión Iniciada")
       setForm({
             email:"",
             password:""
       })
       navigate("/")
-      window.location.reload()
     }
     
   }

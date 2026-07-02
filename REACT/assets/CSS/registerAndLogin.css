@@ -1,6 +1,5 @@
 #register {
   background-color: rgba(223, 62, 13, 0.808);
-  width: auto;
   width: 8rem;
   height: 3rem;
   border: solid;
@@ -15,7 +14,6 @@
 
 #login {
   background-color: rgb(219, 234, 10);
-  width: auto;
   width: 8rem;
   height: 3rem;
   border: solid;
@@ -30,7 +28,6 @@
 
 #logout {
   background-color: rgba(19, 167, 8, 0.808);
-  width: auto;
   width: 8rem;
   height: 3rem;
   border: solid;

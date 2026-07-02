@@ -8,8 +8,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faSunPlantWilt } from '@fortawesome/free-solid-svg-icons'
 import RouteNavList from './RouteNavList'
 import Logo from './Logo'
-import Button from '../../generalComponents/cards/Button'
-import useAuth from '../../../hooks/user/useAuth'
+import Button from '../generalComponents/cards/Button'
+import {useAuth} from "../../hooks/user/AuthContext";
+
 
 //Por cuestiones de estilo, preferí no dejar un mensaje de "Bienvenidos tras el login"
 
@@ -31,7 +32,6 @@ function Nav() {
     alert("Sesión cerrada")
     logout()
     navigate("/")
-    window.location.reload()
   }
 
   return (
@@ -90,7 +90,7 @@ function Nav() {
         <RouteNavList 
         icon={faHouse}      
         navText="Cabañas"
-         iconColor="rgb(210, 171, 28)" 
+        iconColor="rgb(210, 171, 28)" 
         route="/cabañas" />
 
         <RouteNavList

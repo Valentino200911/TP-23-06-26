@@ -5,16 +5,19 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import Icon from '../generalComponents/fontawesome/Icon'
 
-function RouteNavList({icon, navText, route, iconColor}) {
+function RouteNavList({icon, iconColor, navText, route}) {
   return (
     <li>
 
+      <Icon
+      icon={icon}
+      iconColor={iconColor} />
+
        <NavLink to={route} 
        className='domine-bold'>
-        
-       <FontAwesomeIcon icon={icon} style={{color: iconColor}}/>
-        
+      
         {navText}
         
         </NavLink>

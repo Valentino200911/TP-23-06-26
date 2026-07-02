@@ -90,6 +90,8 @@ function Editor() {
         Editar los registros de Naturaleza
       </h2>
 
+      <div className="editorLayout">
+
       <form onSubmit={handleFormSubmit}>
         <Input
           inputText="Nombre del Elemento"
@@ -129,7 +131,9 @@ function Editor() {
           onChange={handleInputChange}
         />
 
-        <div>
+        {/* Preview de Card */}
+
+        <div className="previewPanel">
           <h4 className="faculty-glyphic-regular">
             Previsualización de la imagen (Insterte la URL)
           </h4>
@@ -182,6 +186,8 @@ function Editor() {
           </h3>
         )}
       </form>
+      </div>
+
     </>
   );
 }

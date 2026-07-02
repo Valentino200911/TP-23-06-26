@@ -38,7 +38,6 @@ function Register() {
             password:""
       })
       navigate("/user/login")
-      window.location.reload()
     }
     
   }

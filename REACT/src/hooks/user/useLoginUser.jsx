@@ -1,46 +1,43 @@
 import { useState } from "react";
-import { API_URL } from "../../config";
+import useGetUserByEmail from "./useGetUserByEmail";
 
 function useLoginUser() {
   const [error, setError] = useState(null);
+
+  const { getUserByEmail } = useGetUserByEmail();
 
   const loginUser = async (email, password) => {
     setError(null);
 
     try {
-      const response = await fetch(`${API_URL}user`);
+      const users = await getUserByEmail(email);
 
-      if (!response.ok) {
-        throw new Error(
-          `Error al leer el usuario, intente de nuevo,
-          ${response.status}`,
-        );
-      }
-      
-      const users = await response.json();
+      if (!users || users.length === 0) {
+        setError("Credenciales No Autorizadas");
 
-      //Tener un getUserByEmail
-
-      const userFound = users.find((user) => user.email === email && user.password === password);
-
-      if (!userFound) {
-        console.log(userFound);
-        setError("Credenciales no autorizadas")
-        return null
-        
+        return null;
       }
 
+      const userFound = users[0];
+
+      if (userFound.password !== password) {
+        setError("Credenciales No Autorizadas");
+
+        return null;
+      }
 
       const { password: _, ...userWithoutPassword } = userFound;
 
       return userWithoutPassword;
     } catch (error) {
-      console.error("Error al ingresar como usuario",  error);
+      console.error("Error al ingresar como usuario", error);
+
       setError(error);
+
       return null;
     }
   };
-  return {error, loginUser}
+  return { error, loginUser };
 }
 
 export default useLoginUser;

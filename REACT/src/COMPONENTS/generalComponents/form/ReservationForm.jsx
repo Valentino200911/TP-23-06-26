@@ -51,7 +51,6 @@ function ReservationForm() {
       comment: ""
       })
       alert("Reservación realizada")
-      window.location.reload()
     }
     
   }

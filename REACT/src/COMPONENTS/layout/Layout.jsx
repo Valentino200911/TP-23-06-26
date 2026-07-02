@@ -1,7 +1,7 @@
 
-import Header from '../jsx/header/Header'
-import Footer from '../jsx/footer/Footer'
 import { NavLink, Outlet } from 'react-router-dom'
+import Header from '../header/Header'
+import Footer from '../footer/Footer'
 
 function Layout() {
   return (

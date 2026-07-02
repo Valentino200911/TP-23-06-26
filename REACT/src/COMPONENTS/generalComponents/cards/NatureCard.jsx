@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom"
 import Button from "./Button"
 import Images from "../galleries/Images"
-import useAuth from "../../../hooks/user/useAuth"
+import { useAuth } from "../../../hooks/user/AuthContext";
 
-function NatureCard({key, cardTitleNature, cardSecondTitle, natureDescription, src, href, onClickEdit, onClickDelete}) {
+function NatureCard({cardTitleNature, cardSecondTitle, natureDescription, src, href, onClickEdit, onClickDelete}) {
 
   const {user, isAuthenticated} = useAuth()
 
