@@ -95,7 +95,7 @@ function ReservationForm() {
           id="phoneNumber"
           value={form.phoneNumber}
           type="number"
-          placeholder="+54 9 123 4567890"
+          placeholder="+5491234567890"
           onChange={handleInputChange}
         />
 

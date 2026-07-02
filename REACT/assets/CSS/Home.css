@@ -1,4 +1,4 @@
-/* EN ESTE CSS SE ENCUENTRAN LOS SELECTORES UNIVERSALES DE TODO EL SITIO Y LOS ESPECÍFICOS DE index.html*/
+/* EN ESTE CSS SE ENCUENTRAN LOS SELECTORES UNIVERSALES DE TODO EL SITIO Y LOS ESPECÍFICOS DE LA HOME*/
 
 /* UNIVERSALS */
 
@@ -7,7 +7,6 @@
     text-align: justify;
     font-weight: 495;
     line-height: 3rem;
-    color: white;
     box-sizing: border-box;
 }
 
@@ -81,8 +80,6 @@ nav ul li a {
     margin: 0 -0.5rem 0 -2rem;
 }
 
-
-
 /* TITLES */
 
 h1 {
@@ -120,25 +117,30 @@ img.loadingElements{
 
 h2.faculty-glyphic-regular {
     font-size: 1.85rem;
+    color: rgb(255, 255, 255);
 }
 
 h3.faculty-glyphic-regular {
     font-size: 1.6rem;
+    color: rgb(255, 255, 255);
 }
 
 h4.faculty-glyphic-regular {
     font-size: 1.5rem;
     margin-bottom: 0;
+    color: rgb(255, 255, 255);
 }
 
 h5.faculty-glyphic-regular {
     font-size: 1.3rem;
     margin-bottom: 0;
+    color: rgb(255, 255, 255);
 }
 
 p.faculty-glyphic-regular {
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
 
 }
 

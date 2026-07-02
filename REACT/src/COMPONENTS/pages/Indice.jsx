@@ -59,6 +59,8 @@ function Indice() {
         Indexar y Crear registros para Naturaleza
       </h2>
 
+      <div className="editorLayout">
+
       <form onSubmit={handleFormSubmit}>
         <Input
           type="text"
@@ -125,27 +127,6 @@ function Indice() {
           onChange={handleInputChange}
         />
 
-       <div>
-
-        <h4 className="faculty-glyphic-regular">Previsualización de la Tarjeta (llene todos los campos)</h4>
-
-        <div className="cardContainer">
-
-          <div className="cardNature">
-
-            <NatureCard
-            cardTitleNature={form.name}
-            cardSecondTitle={form.binomialName}
-            natureDescription={form.description}
-            src={form.image}
-            info={form.info}
-            />
-
-          </div>
-
-        </div>
-
-      </div>
 
         <div className="buttonContainer">
           <Button
@@ -171,6 +152,35 @@ function Indice() {
           )}
 
       </form>
+
+      <div className="previewPanel">
+
+       <div>
+
+        <h4 className="faculty-glyphic-regular">Previsualización de la Tarjeta (llene todos los campos)</h4>
+
+        <div className="cardContainer">
+
+          <div className="cardNature">
+
+            <NatureCard
+            cardTitleNature={form.name}
+            cardSecondTitle={form.binomialName}
+            natureDescription={form.description}
+            src={form.image}
+            info={form.info}
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+
+      </div>
+
     </>
   );
 }

@@ -1,5 +1,3 @@
-//Esto aplica para las imágenes de la galería
-
 
 function Images({src, alt, className}) {
   return (

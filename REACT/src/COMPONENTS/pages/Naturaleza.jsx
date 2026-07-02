@@ -33,7 +33,7 @@ function Naturaleza() {
     event.stopPropagation();
 
     if (
-      window.confirm("¿Desea eliminar el producto?, el borrado será permanente")
+      window.confirm("¿Desea eliminar el elemento?, el borrado será permanente")
     ) {
       const response = await deleteNature(bioelementId);
 
@@ -44,7 +44,7 @@ function Naturaleza() {
       }
       return;
     }
-    //Es distinto el return con if(error) que con if(deleteError)
+    //Es distinto el return con if(error) que con if(deleteError) -- (error al eliminar)
     if (deleteError) {
       return (
         <>

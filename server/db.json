@@ -59,17 +59,17 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Vanellus_chilensis_%28close-up-2%29.jpg/960px-Vanellus_chilensis_%28close-up-2%29.jpg",
       "info": "https://es.wikipedia.org/wiki/Vanellus_chilensis",
       "id": 7
-    }
-  ],
-  "user": [
+    },
     {
-      "name": "Valentino",
-      "surname": "Valvo",
-      "email": "valenvalvo@gmail.com",
-      "password": "1",
-      "id": 1
+      "name": "Zorzal",
+      "binomialName": "Turdus rufiventris",
+      "description": "Es una especie de ave paseriforme de la familia Turdidae que habita en regiones de Argentina, Brasil, Uruguay y Paraguay.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxk0gBTEfSiTd8khHHzHHyTLeTR3ZvLLe6l8npwZ5PRQ&s=10",
+      "info": "https://es.wikipedia.org/wiki/Turdus_rufiventris",
+      "id": 8
     }
   ],
+  "user": [],
   "reservation": [],
   "contact": []
 }

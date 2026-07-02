@@ -120,7 +120,7 @@
         display: block;
         align-self: center;
         margin: 0.25rem auto 0.25rem auto;
-        width: 20rem;
+        width: 80%;
     }
 
     div.selectorContainer {
@@ -164,7 +164,7 @@
 
     textarea {
         margin: 0.25rem auto 0.25rem auto;
-        width: 20rem;
+        width: 80%;
         height: 10rem;
     }
 
@@ -194,6 +194,11 @@
         padding: 0 1rem;
     }
 
+/* IndiceAndEditor */
 
+div.editorLayout {
+  display: flex;
+  flex-direction: column !important;
+}
 
 }

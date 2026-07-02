@@ -30,7 +30,7 @@ function usePostNature() {
 
       return data;
     } catch (error) {
-      console.error("Error al crear el producto desde el Índice", error);
+      console.error("Error al crear el elemento desde el Índice", error);
       setError(error);
       return null;
     } finally {

@@ -1,8 +1,8 @@
+@import url(Home.css);
+
 @import url(Cabañas.css);
 
 @import url(Contacto.css);
-
-@import url(Home.css);
 
 @import url(ServiciosTuristicos.css);
 
@@ -12,6 +12,6 @@
 
 @import url(Naturaleza.css);
 
-@import url(Indice.css);
+@import url(IndiceAndEditor.css);
 
 @import url(RegisterAndLogin.css);

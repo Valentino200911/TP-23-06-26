@@ -58,12 +58,12 @@ function ServiciosTuristicos() {
 
         <ul className="activitiesList">
           
-          <li className="faculty-glyphic-regular">Senderismo</li>
+          <li className="faculty-glyphic-regular">Senderismo.</li>
 
-          <li className="faculty-glyphic-regular">Ciclismo</li>
+          <li className="faculty-glyphic-regular">Ciclismo.</li>
 
           <li className="faculty-glyphic-regular">
-            Equitación (Costo Adicional)
+            Equitación (Costo Adicional).
           </li>
         </ul>
       </section>

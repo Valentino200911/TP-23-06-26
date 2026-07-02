@@ -4,7 +4,7 @@ function Icon({icon, iconColor}) {
   return (
     <>
     
-    <FontAwesomeIcon icon={icon} color={iconColor}/>
+    <FontAwesomeIcon icon={icon} style={{color: iconColor}}/>
     
     </>
   )

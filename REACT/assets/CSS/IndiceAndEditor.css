@@ -22,6 +22,7 @@ div.editorLayout div.previewPanel {
   text-align: center;
   font-weight: bold;
   cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
 #edit {
@@ -33,6 +34,7 @@ div.editorLayout div.previewPanel {
   text-align: center;
   font-weight: bold;
   cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
 .previewImageContainer {

@@ -4,8 +4,6 @@ import { useEffect } from "react";
 
 //getNature = getProducts, useGetNature = useGetProducts
 
-//En getNature(`${API_URL}naturalElements`);, naturalElements se mantiene debido a que es la configuración normal de server, lo mismo ocurre en usePostNature
-
 function useGetNature() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -20,7 +18,7 @@ function useGetNature() {
 
       if (!response.ok) {
         throw new Error(
-          `Error al traer los registros de Naturaleza,
+          `Error con los registros de Naturaleza,
           ${response.status}`,
         );
       }

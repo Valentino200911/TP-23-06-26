@@ -102,9 +102,11 @@ function Register() {
           />
         </div>
 
-        {error && (
-          <h3 className="faculty-glyphic-regular warning">{error?.message || error}</h3>
-        )}
+          {error && (
+            <h3 className="faculty-glyphic-regular warning">
+              {error?.message || error}
+            </h3>
+          )}
       </form>
     </>
   );

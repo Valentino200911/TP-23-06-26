@@ -1,16 +1,14 @@
 
-import { NavLink, useNavigate } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faSunPlantWilt } from '@fortawesome/free-solid-svg-icons'
 import RouteNavList from './RouteNavList'
+import { useNavigate } from 'react-router-dom';
 import Logo from './Logo'
 import Button from '../generalComponents/cards/Button'
 import {useAuth} from "../../hooks/user/AuthContext";
-
 
 //Por cuestiones de estilo, preferí no dejar un mensaje de "Bienvenidos tras el login"
 
@@ -103,13 +101,13 @@ function Nav() {
         <RouteNavList 
         icon={faEnvelope}
         navText="Contacto" 
-        iconColor="rgb(253, 152, 2)"
+        iconColor="rgb(253, 90, 2)"
         route="/contacto" />
 
         <RouteNavList 
         icon={faSunPlantWilt}
         navText="Naturaleza" 
-        iconColor="rgb(8, 78, 37)"
+        iconColor="rgb(80, 208, 37)"
         route="/naturaleza" />
 
       </ul>

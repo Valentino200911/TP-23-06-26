@@ -21,9 +21,9 @@ Este proyecto utiliza las siguientes tecnologías en su interior:
 ## 3. 🏢 La Estructura de Carpetas
 
 ```text
-PROYECTO/               # CARPETA RAÍZ
+TP-23-06-26/               #CARPETA RAÍZ
 ├               
-├REACT/                 # Carpeta que contiene la totalidad del proyecto
+├REACT/                 #Carpeta que contiene la totalidad del proyecto
 ├   ├ assets/            
 ├   ├   ├ CSS/
 ├   ├      ├ Cabañas.css
@@ -128,7 +128,7 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   ├    ├      ├usePostNature.jsx 
 ├   ├   ├    ├  
 ├   ├   ├    ├ user/
-├   ├   ├    ├      ├AuthContext.jsx 
+├   ├   ├    ├      ├AuthContext.jsx      #Reemplaza al archivo useAuth.jsx
 ├   ├   ├    ├      ├useGetNatureByEmail.jsx    
 ├   ├   ├    ├      ├useLoginUser.jsx 
 ├   ├   ├    ├      ├useRegisterUser.jsx 
@@ -141,13 +141,13 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├   ├         
 ├   ├   ├ App.jsx
 ├   ├   ├ config.js
-├   ├   ├ index.css    # Archivo .css general para las páginas
+├   ├   ├ index.css    #Archivo .css general para las páginas
 ├   ├   ├ main.jsx
 ├   ├   ├ ProtectedRoute.jsx 
-├   ├   ├ router.jsx   # Ruteo de las páginas          
+├   ├   ├ router.jsx   #Ruteo de las páginas          
 ├   ├        
 ├   ├ .env             # .env privada, excluida según el .gitignore   
-├   ├ .env.example     # Ejemplo de la .env   
+├   ├ .env.example     #Ejemplo de la .env   
 ├   ├ .gitignore   
 ├   ├ src
 ├   ├ index.html   
@@ -155,15 +155,15 @@ PROYECTO/               # CARPETA RAÍZ
 ├   ├ package.json   
 ├   ├ vite.config.js     
 ├
-├ server                # Carpeta de la API local (Hermana de PROYECTO/REACT)
+├ server                #Carpeta de la API local (Hermana de TP-23-06-26/REACT)
 ├   ├ node_modules/  
 ├   ├ .gitignore 
-├   ├ db.json           # Archivo de la API local
+├   ├ db.json           #Archivo de la API local
 ├   ├ package-lock.json
 ├   ├ package.json 
 ├   ├ README.md          
 ├   
-├ README.md             # Este README en sí mismo
+├ README.md             #Este README en sí mismo
 
 ```
 
@@ -214,7 +214,7 @@ Entre las funcionalidades del proyecto se encuentran:
 * Sección de Cabañas con Galería.
 * Servicios Turísticos con mapa embebido.
 * Formulario de contacto.
-* CRUD de elementos de Naturaleza (crear, editar, borrar). 
+* CRUD de elementos de Naturaleza (crear, editar y borrar). 
 * El control de los formularios del proyecto.
 * La comunicación entre la API Simulada y el Frontend.
 * Registración, Inicio y Cierre de Sesión de Usuario.
@@ -225,9 +225,9 @@ Entre las funcionalidades del proyecto se encuentran:
 Entre las colecciones funcionales que admite el server (db.json), se encuentran:
 
 ```
-  http://0.0.0.0:3000/naturalElements   #Formularios de Índice, Naturaleza y Editor + NatureCards
-  http://0.0.0.0:3000/user              #Formularios de Login y Register
-  http://0.0.0.0:3000/reservation       #Formulario de Reservación (Contacto.jsx)
-  http://0.0.0.0:3000/contact           #Formulario de Contacto (Contacto.jsx)
+  http://0.0.0.0:3000/naturalElements   #Formularios de Índice, Naturaleza y Editor + NatureCards.
+  http://0.0.0.0:3000/user              #Formularios de Login y Register.
+  http://0.0.0.0:3000/reservation       #Formulario de Reservación (Contacto.jsx).
+  http://0.0.0.0:3000/contact           #Formulario de Contacto (Contacto.jsx).
 ```
 Las colecciones de user, reservation y contact se encuentran completamente limpias.
